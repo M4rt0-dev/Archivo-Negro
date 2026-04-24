@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARCHIVO NEGRO — Juego de Detectives Terminal</title>
+  <style>
+    :root{--bg:#020904;--panel:#060f08;--green:#00e676;--dim:#4caf50;--muted:#388e3c;--warn:#ffee58;--bad:#ef5350;--good:#69f0ae;--white:#e8f5e9;--bdr:#1b5e20;}
+    html,body{margin:0;width:100%;height:100%;background:var(--bg);color:var(--green);font-family:"Consolas","Courier New",monospace;font-size:15px;overflow:hidden;}
+    body::before{content:"";position:fixed;inset:0;pointer-events:none;background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,0) 2px,rgba(0,0,0,.18) 3px,rgba(0,0,0,.18) 4px);z-index:10;}
+    #app{box-sizing:border-box;width:100%;height:100%;padding:14px;display:grid;grid-template-rows:auto 1fr auto;gap:8px;}
+    .hdr{border:1px solid var(--bdr);background:var(--panel);padding:7px 14px;display:flex;justify-content:space-between;color:var(--white);letter-spacing:.5px;font-size:13px;}
+    #trm{border:1px solid var(--bdr);background:var(--panel);padding:12px 14px;overflow-y:auto;line-height:1.55;}
+    .prm{border:1px solid var(--bdr);background:#040c06;display:flex;align-items:center;gap:10px;padding:8px 14px;}
+    #prl{color:var(--green);white-space:nowrap;user-select:none;}
+    #cmd{flex:1;border:none;outline:none;background:transparent;color:var(--green);font:inherit;caret-color:var(--green);}
+    .g{color:var(--green);}.m{color:var(--muted);}.w{color:var(--warn);}.b{color:var(--bad);}.ok{color:var(--good);}.wh{color:var(--white);}.cmd{color:#80cbc4;}
+  </style>
+</head>
+<body>
+<div id="app">
+  <div class="hdr"><span id="ttl">ARCHIVO NEGRO / SISTEMA DE RECUPERACION</span><span id="sts"></span></div>
+  <div id="trm"></div>
+  <div class="prm"><span id="prl">&gt;</span><input id="cmd" type="text" autocomplete="off" spellcheck="false" autofocus /></div>
+</div>
+<script src="cases/case1.js"></script>
+<script src="cases/case2.js"></script>
+<script src="cases/case3.js"></script>
+<script src="cases/case4.js"></script>
+<script>
+var CASES=[CASE1,CASE2,CASE3,CASE4];
+
+/* ==== ESTADO ==== */
+var G={mode:"menu",ci:-1,cwd:[],unlocked:new Set(),revealed:new Set(),solved:false,hintIdx:0,history:[],hpos:-1,read:new Set()};
+
+/* ==== DOM ==== */
+var trm=document.getElementById("trm"),inp=document.getElementById("cmd"),ttl=document.getElementById("ttl"),sts=document.getElementById("sts"),prl=document.getElementById("prl");
+
+/* ==== UTIL ==== */
+function echo(t,c){var d=document.createElement("div");d.textContent=t;if(c)d.className=c;trm.appendChild(d);trm.scrollTop=trm.scrollHeight;}
+function block(t,c){(t||"").split("\n").forEach(function(l){echo(l,c);});}
+function nm(s){return(s||"").trim().toLowerCase();}
+function cs(){return CASES[G.ci];}
+function fp(w,n){return"/"+(w.length?w.join("/")+"/":"")+n;}
+function ps(w){return"/"+(w||G.cwd).join("/");}
+function nd(parts){var n=cs().filesystem;for(var i=0;i<parts.length;i++){if(!n||n.type!=="dir"||!n.children[parts[i]])return null;n=n.children[parts[i]];}return n;}
+function cur(){return nd(G.cwd);}
+function vis(n,node){return !node.hidden||G.revealed.has(fp(G.cwd,n));}
+function upSts(){sts.textContent=ps();}
+
+/* ==== COMANDOS ==== */
+function doHelp(){
+  echo("COMANDOS DISPONIBLES","ok");
+  [
+    "help                        muestra esta lista de comandos",
+    "ls  /  dir                  lista archivos del directorio actual",
+    "cd [carpeta | .. | /]       navega por los directorios",
+    "read [archivo]              lee un archivo",
+    "unlock [archivo] [clave]    desbloquea un archivo cifrado",
+    "search [base] [termino]     busca en la base de datos del sistema",
+    "examine [termino]           examina un objeto o concepto del caso",
+    "profile [nombre]            muestra el perfil de un sospechoso",
+    "timeline                    muestra la cronologia del caso",
+    "evidence                    lista los archivos que has leido",
+    "map                         muestra el mapa de la ubicacion",
+    "hint                        pista del siguiente paso",
+    "clear                       limpia la pantalla",
+    "menu                        vuelve al selector de casos"
+  ].forEach(function(l){echo("  "+l,"m");});
+}
+
+function doLs(){
+  var d=cur();if(!d){echo("Error: directorio no valido.","b");return;}
+  var entries=Object.entries(d.children).filter(function(e){return vis(e[0],e[1]);}).sort(function(a,b){if(a[1].type!==b[1].type)return a[1].type==="dir"?-1:1;return a[0].localeCompare(b[0]);});
+  if(!entries.length){echo("(directorio vacio)","m");return;}
+  entries.forEach(function(e){var lk=e[1].locked&&!G.unlocked.has(fp(G.cwd,e[0]))?" [CIFRADO]":"";var rd=e[1].type==="file"&&G.read.has(fp(G.cwd,e[0]))?" [LEIDO]":"";echo("  "+(e[1].type==="dir"?"[DIR] ":"[FILE] ")+e[0]+lk+rd,e[1].type==="dir"?"ok":"g");});
+}
+
+function doCd(a){
+  if(!a){echo("Uso: cd [carpeta | .. | /]","w");return;}
+  if(a==="/"){G.cwd=[];}else if(a===".."){G.cwd=G.cwd.slice(0,-1);}
+  else{var d=cur();var ch=d&&d.children[a];if(!ch||ch.type!=="dir"){echo("Carpeta no encontrada: "+a,"b");return;}G.cwd=[...G.cwd,a];}
+  upSts();echo("  → "+ps(),"m");
+}
+
+function doRead(a){
+  if(!a){echo("Uso: read [archivo]","w");return;}
+  var d=cur();var node=d&&d.children[a];
+  if(!node||node.type!=="file"){echo("Archivo no encontrado: "+a,"b");return;}
+  var p=fp(G.cwd,a);
+  if(node.hidden&&!G.revealed.has(p)){echo("Acceso denegado: archivo no indexado.","b");return;}
+  if(node.locked&&!G.unlocked.has(p)){echo("Archivo cifrado. Usa: unlock "+a+" [contrasena]","w");return;}
+  echo("┌── "+a+" "+"─".repeat(Math.max(0,52-a.length)),"ok");
+  block(node.content);
+  echo("└"+"─".repeat(55),"ok");
+  G.read.add(p);
+  if(a===cs().solveFile && !G.solved){
+    G.solved=true;
+    echo("","");
+    echo("  ██████╗ ███████╗██████╗ ██████╗  ██████╗","ok");
+    echo("  ██╔════╝██╔════╝██╔══██╗██╔══██╗██╔═══██╗","ok");
+    echo("  ██║     █████╗  ██████╔╝██████╔╝██║   ██║","ok");
+    echo("  ██║     ██╔══╝  ██╔══██╗██╔══██╗██║   ██║","ok");
+    echo("  ╚██████╗███████╗██║  ██║██║  ██║╚██████╔╝","ok");
+    echo("   ╚═════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝","ok");
+    echo("  CASO CERRADO — escribe menu para elegir otro","m");
+  }
+}
+
+function doUnlock(a){
+  var pts=(a||"").trim().split(/\s+/);if(pts.length<2){echo("Uso: unlock [archivo] [contrasena]","w");return;}
+  var fn=pts[0];var pw=pts.slice(1).join(" ");
+  var d=cur();var node=d&&d.children[fn];
+  if(!node||node.type!=="file"){echo("Archivo no encontrado: "+fn,"b");return;}
+  if(!node.locked){echo("Este archivo no esta cifrado.","m");return;}
+  var p=fp(G.cwd,fn);
+  if(G.unlocked.has(p)){echo("Ya estaba desbloqueado.","m");return;}
+  if(nm(pw)===nm(node.password)){G.unlocked.add(p);echo("Acceso concedido. Desbloqueado: "+fn,"ok");echo("  Usa 'read "+fn+"' para ver su contenido.","m");}
+  else echo("Contrasena incorrecta.","b");
+}
+
+function doSearch(a){
+  var pts=(a||"").trim().split(/\s+/);if(pts.length<2){echo("Uso: search [base_de_datos] [termino]","w");return;}
+  var db=pts[0];var kw=pts.slice(1).join(" ");
+  var dbs=cs().databases;var dbo=dbs[nm(db)];
+  if(!dbo){echo("Base de datos no reconocida: "+db,"b");return;}
+  var hit=dbo[nm(kw)];
+  if(!hit){echo("Sin resultados para '"+kw+"' en "+db+".","w");return;}
+  echo("[ BUSQUEDA: "+db+" / "+kw+" ]","ok");echo(hit.text);
+  hit.reveal.forEach(function(p){G.revealed.add(p);});
+  if(hit.reveal.length){echo("Nuevos archivos accesibles:","ok");hit.reveal.forEach(function(p){echo("  + "+p,"w");});}
+}
+
+function doExamine(a){
+  if(!a){echo("Uso: examine [termino]","w");return;}
+  var ex=cs().examine;if(!ex){echo("No hay datos de analisis en este caso.","m");return;}
+  var key=nm(a);
+  var hit=null;
+  // exact match first
+  if(ex[key])hit=ex[key];
+  else{// partial match
+    var keys=Object.keys(ex);for(var i=0;i<keys.length;i++){if(keys[i].indexOf(key)>=0||key.indexOf(keys[i])>=0){hit=ex[keys[i]];break;}}}
+  if(!hit){echo("No hay informacion sobre '"+a+"'. Prueba con otra palabra clave.","w");return;}
+  echo("[ ANALISIS: "+a+" ]","ok");
+  block(hit);
+}
+
+function doProfile(a){
+  if(!a){echo("Uso: profile [nombre]","w");return;}
+  var pr=cs().profiles;if(!pr){echo("No hay perfiles en este caso.","m");return;}
+  var key=nm(a);
+  var hit=pr[key];
+  if(!hit){// partial
+    var keys=Object.keys(pr);for(var i=0;i<keys.length;i++){if(keys[i].indexOf(key)>=0){hit=pr[keys[i]];break;}}}
+  if(!hit){echo("Perfil no encontrado: "+a+". Perfiles disponibles: "+Object.keys(pr).join(", "),"w");return;}
+  echo("[ PERFIL ]","ok");
+  block(hit);
+}
+
+function doTimeline(){
+  var tl=cs().timeline;if(!tl||!tl.length){echo("No hay cronologia disponible para este caso.","m");return;}
+  echo("[ CRONOLOGIA DEL CASO ]","ok");
+  tl.forEach(function(ev){
+    var visible=!ev.trigger||G.read.has(ev.trigger);
+    if(visible)echo("  "+ev.time.padEnd(18)+" "+ev.event,"g");
+    else echo("  "+ev.time.padEnd(18)+" [EVENTO BLOQUEADO — lee mas archivos para revelar]","m");
+  });
+  echo("","");
+  var hasBlocked=tl.some(function(ev){return ev.trigger&&!G.read.has(ev.trigger);});
+  if(hasBlocked)echo("  Lee mas archivos para desbloquear eventos ocultos.","m");
+}
+
+function doEvidence(){
+  if(!G.read.size){echo("No has leido ningun archivo todavia. Usa read [archivo] para empezar.","w");return;}
+  echo("[ ARCHIVOS REVISADOS — TOTAL: "+G.read.size+" ]","ok");
+  var sorted=Array.from(G.read).sort();
+  sorted.forEach(function(p){echo("  ✓  "+p,"g");});
+}
+
+function doMap(){
+  var m=cs().map;if(!m){echo("No hay mapa disponible para este caso.","m");return;}
+  echo("[ MAPA ]","ok");
+  block(m);
+}
+
+function doHint(){var hints=cs().hints;echo("[PISTA "+(G.hintIdx+1)+"] "+hints[G.hintIdx%hints.length],"w");G.hintIdx++;}
+function doClear(){trm.innerHTML="";}
+
+function doMenu(){
+  G={mode:"menu",ci:-1,cwd:[],unlocked:new Set(),revealed:new Set(),solved:false,hintIdx:0,history:G.history,hpos:-1,read:new Set()};
+  trm.innerHTML="";ttl.textContent="ARCHIVO NEGRO / SELECTOR DE CASO";sts.textContent="";prl.textContent=">";
+  drawMenu();
+}
+
+/* ==== DISPATCHER ==== */
+function run(raw){
+  var input=raw.trim();if(!input)return;
+  G.history.unshift(input);if(G.history.length>80)G.history.pop();G.hpos=-1;
+  if(G.mode==="menu"){var k=parseInt(input,10);if(k>=1&&k<=CASES.length)startCase(k-1);else echo("Escribe un numero del 1 al "+CASES.length+".","w");return;}
+  echo(ps()+"$ "+input,"cmd");
+  var pts=input.trim().split(/\s+/);var cmd=nm(pts[0]);var args=pts.slice(1).join(" ");
+  switch(cmd){
+    case"help":doHelp();break;
+    case"ls":case"dir":doLs();break;
+    case"cd":doCd(args);break;
+    case"read":doRead(args);break;
+    case"unlock":doUnlock(args);break;
+    case"search":doSearch(args);break;
+    case"examine":doExamine(args);break;
+    case"profile":doProfile(args);break;
+    case"timeline":doTimeline();break;
+    case"evidence":doEvidence();break;
+    case"map":doMap();break;
+    case"hint":doHint();break;
+    case"clear":doClear();break;
+    case"menu":doMenu();break;
+    default:echo("Comando no reconocido. Escribe help para ver los comandos disponibles.","b");
+  }
+}
+
+/* ==== ARRANQUE ==== */
+function startCase(idx){
+  var c=CASES[idx];
+  G={mode:"playing",ci:idx,cwd:[],unlocked:new Set(),revealed:new Set(c.startFiles),solved:false,hintIdx:0,history:G.history,hpos:-1,read:new Set()};
+  trm.innerHTML="";ttl.textContent="[CASO "+(idx+1)+"] "+c.title.toUpperCase();upSts();
+  echo("═".repeat(60),"ok");
+  echo("  "+c.title,"ok");
+  echo("  "+c.setting+" — "+c.year,"m");
+  echo("  "+c.tagline,"w");
+  echo("═".repeat(60),"ok");
+  echo("","");
+  block(c.intro);
+  echo("","");
+  echo("Escribe  help      para ver todos los comandos.","m");
+  echo("Escribe  ls        para explorar archivos.","m");
+  echo("Escribe  map       para ver el mapa de la ubicacion.","m");
+  echo("Escribe  timeline  para ver la cronologia del caso.","m");
+  echo("","");
+}
+
+/* ==== MENU ==== */
+function drawMenu(){
+  echo("","");
+  echo("  ▄▀█ █▀█ █▀▀ █░█ █ █░█ █▀█   █▄░█ █▀▀ █▀▀ █▀█ █▀█","ok");
+  echo("  █▀█ █▀▄ █▄▄ █▀█ █ ▀▄▀ █▄█   █░▀█ ██▄ █▄█ █▀▄ █▄█","ok");
+  echo("","");
+  echo("  Sistema de recuperacion de archivos confidenciales","m");
+  echo("  Escribe el numero del caso para comenzar la investigacion.","m");
+  echo("","");
+  echo("  "+"─".repeat(58),"m");
+  CASES.forEach(function(c,i){
+    echo("  ["+(i+1)+"]  "+c.title,"wh");
+    echo("       "+c.year+"  ·  "+c.setting,"m");
+    echo("       "+c.tagline,"w");
+    echo("","");
+  });
+  echo("  "+"─".repeat(58),"m");
+  echo("","");
+  echo("  Comandos en el juego: help, ls, cd, read, unlock, search,","m");
+  echo("  examine, profile, timeline, evidence, map, hint, clear, menu","m");
+}
+
+/* ==== INPUT ==== */
+inp.addEventListener("keydown",function(e){
+  if(e.key==="Enter"){var v=inp.value;inp.value="";run(v);}
+  else if(e.key==="ArrowUp"){if(G.history.length){G.hpos=Math.min(G.hpos+1,G.history.length-1);inp.value=G.history[G.hpos];}}
+  else if(e.key==="ArrowDown"){G.hpos=Math.max(G.hpos-1,-1);inp.value=G.hpos>=0?G.history[G.hpos]:"";}
+});
+document.addEventListener("click",function(){inp.focus();});
+drawMenu();
+</script>
+</body>
+</html>
