@@ -217,34 +217,34 @@
 
   var ZONE_MAP_LOCATIONS = [
     [ // cap1
-      { name: "Plaza del Reloj", tag: "Torre", icon: "🕐", x: 27, y: 57, puzzles: ["p01", "p02"], coinIndex: 0, coinX: 19, coinY: 64 },
-      { name: "Ayuntamiento", tag: "Despacho", icon: "🏛", x: 66, y: 45, puzzles: ["p03", "p04"], coinIndex: 1, coinX: 72, coinY: 32 },
-      { name: "Correo municipal", tag: "Bonus", icon: "📁", x: 50, y: 22, puzzles: ["pb01"], bonus: true }
+      { name: "Plaza del Reloj", tag: "Torre", icon: "🕐", x: 50, y: 73, puzzles: ["p01", "p02"], coinIndex: 0, coinX: 50, coinY: 63 },
+      { name: "Ayuntamiento", tag: "Despacho", icon: "🏛", x: 87, y: 55, puzzles: ["p03", "p04"], coinIndex: 1, coinX: 87, coinY: 67 },
+      { name: "Correo municipal", tag: "Bonus", icon: "📁", x: 13, y: 55, puzzles: ["pb01"], bonus: true }
     ],
     [ // cap2
-      { name: "Taller Bercial", tag: "Mecanismos", icon: "⚙", x: 28, y: 56, puzzles: ["p05", "p06"], coinIndex: 0, coinX: 24, coinY: 42 },
-      { name: "Patio de carga", tag: "Rastros", icon: "🔍", x: 69, y: 44, puzzles: ["p07", "p08"], coinIndex: 1, coinX: 76, coinY: 58 },
-      { name: "Cuaderno cifrado", tag: "Bonus", icon: "📖", x: 50, y: 24, puzzles: ["pb02"], bonus: true }
+      { name: "Taller Bercial", tag: "Mecanismos", icon: "⚙", x: 35, y: 48, puzzles: ["p05", "p06"], coinIndex: 0, coinX: 35, coinY: 62 },
+      { name: "Patio de carga", tag: "Rastros", icon: "🔍", x: 80, y: 62, puzzles: ["p07", "p08"], coinIndex: 1, coinX: 80, coinY: 50 },
+      { name: "Cuaderno cifrado", tag: "Bonus", icon: "📖", x: 55, y: 28, puzzles: ["pb02"], bonus: true }
     ],
     [ // cap3
-      { name: "Biblioteca", tag: "Hemeroteca", icon: "📚", x: 25, y: 52, puzzles: ["p09", "p10"], coinIndex: 0, coinX: 17, coinY: 36 },
-      { name: "Sala del Consejo", tag: "Actas", icon: "🗝", x: 72, y: 54, puzzles: ["p11", "p12"], coinIndex: 1, coinX: 64, coinY: 37 },
-      { name: "Sótano archivo", tag: "Bonus", icon: "📜", x: 50, y: 23, puzzles: ["pb03"], bonus: true }
+      { name: "Biblioteca", tag: "Hemeroteca", icon: "📚", x: 18, y: 55, puzzles: ["p09", "p10"], coinIndex: 0, coinX: 18, coinY: 72 },
+      { name: "Sala del Consejo", tag: "Actas", icon: "🗝", x: 87, y: 55, puzzles: ["p11", "p12"], coinIndex: 1, coinX: 87, coinY: 72 },
+      { name: "Sótano archivo", tag: "Bonus", icon: "📜", x: 36, y: 30, puzzles: ["pb03"], bonus: true }
     ],
     [ // cap4
-      { name: "Campanario Antiguo", tag: "Acceso", icon: "🔔", x: 30, y: 56, puzzles: ["p13", "p14"], coinIndex: 0, coinX: 22, coinY: 41 },
-      { name: "Sala de Campanas", tag: "Acústica", icon: "🎵", x: 67, y: 39, puzzles: ["p15", "p16"], coinIndex: 1, coinX: 74, coinY: 26 },
-      { name: "Galería contrapesos", tag: "Bonus", icon: "⚖", x: 50, y: 22, puzzles: ["pb04"], bonus: true }
+      { name: "Campanario Antiguo", tag: "Acceso", icon: "🔔", x: 28, y: 73, puzzles: ["p13", "p14"], coinIndex: 0, coinX: 28, coinY: 58 },
+      { name: "Sala de Campanas", tag: "Acústica", icon: "🎵", x: 50, y: 22, puzzles: ["p15", "p16"], coinIndex: 1, coinX: 50, coinY: 38 },
+      { name: "Galería contrapesos", tag: "Bonus", icon: "⚖", x: 66, y: 42, puzzles: ["pb04"], bonus: true }
     ],
     [ // cap5
-      { name: "Estación Valdeluna", tag: "Andén", icon: "🚂", x: 27, y: 56, puzzles: ["p17", "p18"], coinIndex: 0, coinX: 19, coinY: 42 },
-      { name: "Camino cantera", tag: "Traslado", icon: "🛤", x: 69, y: 44, puzzles: ["p19", "p20"], coinIndex: 1, coinX: 77, coinY: 55 },
-      { name: "Almacén ferroviario", tag: "Bonus", icon: "📦", x: 50, y: 22, puzzles: ["pb05"], bonus: true }
+      { name: "Estación Valdeluna", tag: "Andén", icon: "🚂", x: 23, y: 50, puzzles: ["p17", "p18"], coinIndex: 0, coinX: 23, coinY: 65 },
+      { name: "Camino cantera", tag: "Traslado", icon: "🛤", x: 76, y: 57, puzzles: ["p19", "p20"], coinIndex: 1, coinX: 76, coinY: 68 },
+      { name: "Almacén ferroviario", tag: "Bonus", icon: "📦", x: 50, y: 25, puzzles: ["pb05"], bonus: true }
     ],
     [ // cap6
-      { name: "Cámara Reloj Maestro", tag: "Núcleo", icon: "⚗", x: 28, y: 57, puzzles: ["p21", "p22"], coinIndex: 0, coinX: 22, coinY: 42 },
-      { name: "Plataforma Acusación", tag: "Finale", icon: "⚖", x: 69, y: 45, puzzles: ["p23", "p24"], coinIndex: 1, coinX: 78, coinY: 33 },
-      { name: "Cilindro auxiliar", tag: "Bonus", icon: "🔧", x: 50, y: 22, puzzles: ["pb06"], bonus: true }
+      { name: "Cámara Reloj Maestro", tag: "Núcleo", icon: "⚗", x: 58, y: 39, puzzles: ["p21", "p22"], coinIndex: 0, coinX: 58, coinY: 55 },
+      { name: "Plataforma Acusación", tag: "Finale", icon: "⚖", x: 20, y: 67, puzzles: ["p23", "p24"], coinIndex: 1, coinX: 20, coinY: 80 },
+      { name: "Cilindro auxiliar", tag: "Bonus", icon: "🔧", x: 83, y: 62, puzzles: ["pb06"], bonus: true }
     ]
   ];
 
@@ -799,8 +799,7 @@
     pb06: { prompt: "El segundo cilindro ofrece una cronología inmune a testimonios. Debes traducir su marca inicial y el tiempo de ejecución para fijar la hora de cierre del sabotaje.", goal: "Calcular la hora exacta de finalización de la intervención mecánica.", steps: ["Parte del inicio indicado por la posición del cilindro.", "Suma el tiempo operativo sin redondear por intuición.", "Selecciona la hora que coincide exactamente con 45 minutos de trabajo."], win: "La hora elegida ancla técnicamente la acusación y neutraliza objeciones sobre márgenes temporales.", mentor: "Una cronología precisa vale más que diez testigos inseguros.", apprentice: "Si el cilindro marca el inicio, el final cae por aritmética pura.", hints: ["La posición 8 equivale a las 08:00.", "Debes añadir 45 minutos exactos, no media hora ni una hora.", "El sabotaje termina a las 08:45."] }
   };
 
-  var references = {};
-  var PUZZLE_DIALOGUES = {
+    var PUZZLE_DIALOGUES = {
     p01: [{ speaker: "Inés Galván", text: "Calor y luz como evidencia simultánea. No lo habría imaginado de otro modo." }, { speaker: "Profesor Montes", text: "El primer puzle de Bercial ya muestra su método: nunca una sola prueba cuando puedes obtener dos." }],
     p02: [{ speaker: "Inés Galván", text: "Dos triángulos superpuestos. El patio no era un desorden, era una lección de geometría coordinada." }, { speaker: "Profesor Montes", text: "Y ahora sabemos que el sabotaje requirió al menos dos personas actuando en sincronía." }],
     p03: [{ speaker: "Inés Galván", text: "El alcalde usó exactamente esa misma trampa. Frases rotundas sin evidencia detrás." }, { speaker: "Profesor Montes", text: "Distinguir afirmación de prueba será nuestra herramienta más valiosa en lo que resta del caso." }],

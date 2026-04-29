@@ -161,7 +161,7 @@
     <line x1="525" y1="440" x2="600" y2="440"/><line x1="525" y1="450" x2="600" y2="450"/>
   </g>
   <!-- Magnifying glass on table -->
-  <circle cx="656" cy="440" rx="26" ry="26" fill="none" stroke="#a07828" stroke-width="4" cx="656" cy="440" r="26"/>
+  <circle cx="656" cy="440" r="26" fill="none" stroke="#a07828" stroke-width="4"/>
   <circle cx="656" cy="440" r="18" fill="rgba(200,220,240,0.2)" stroke="#a07828" stroke-width="2"/>
   <line x1="676" y1="460" x2="696" y2="480" stroke="#a07828" stroke-width="4" stroke-linecap="round"/>
   <!-- Lamp on table (oil lamp) -->

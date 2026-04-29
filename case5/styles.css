@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --ink: #201815;
   --ink-soft: #53443f;
   --paper: #f5ebd8;
@@ -1590,6 +1590,12 @@ a:active {
   cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ccircle cx='12' cy='12' r='8' fill='none' stroke='%239e5c2b' stroke-width='2.5'/%3E%3Cline x1='18' y1='18' x2='28' y2='28' stroke='%239e5c2b' stroke-width='3.5'/%3E%3Crect x='10.5' y='6.5' width='2' height='7' rx='1' fill='%239e5c2b'/%3E%3Ccircle cx='11.5' cy='16.5' r='1.2' fill='%239e5c2b'/%3E%3C/svg%3E") 4 4, pointer;
 }
 
+
+button:not(:disabled),
+[role="button"]:not([aria-disabled="true"]),
+a {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ccircle cx='12' cy='12' r='8' fill='none' stroke='%23324657' stroke-width='2'/%3E%3Cline x1='18' y1='18' x2='28' y2='28' stroke='%23324657' stroke-width='3'/%3E%3C/svg%3E") 4 4, pointer;
+}
 @media (max-width: 760px) {
   .dialogue-box {
     grid-template-columns: 1fr;
