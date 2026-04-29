@@ -1,0 +1,210 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="Biblioteca Municipal, San Teodoro – Capitulo III La Biblioteca de los Reflejos">
+  <defs>
+    <linearGradient id="bg3z" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1410"/><stop offset="100%" stop-color="#182818"/>
+    </linearGradient>
+    <radialGradient id="lg3z" cx="62%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#ffe898" stop-opacity="0.8"/><stop offset="100%" stop-color="#ffd060" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="mir3z" cx="50%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="rgba(200,215,230,0.4)"/><stop offset="100%" stop-color="rgba(180,200,220,0)"/>
+    </radialGradient>
+    <linearGradient id="fl3z" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a1c0e"/><stop offset="100%" stop-color="#1a1008"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg3z)"/>
+  <!-- Warm lamp glow from right -->
+  <ellipse cx="760" cy="250" rx="580" ry="440" fill="url(#lg3z)"/>
+  <!-- Floor -->
+  <rect x="0" y="560" width="1200" height="160" fill="url(#fl3z)"/>
+  <!-- Floor parquet lines -->
+  <g stroke="rgba(60,35,10,0.45)" stroke-width="1.2" fill="none">
+    <line x1="0" y1="580" x2="1200" y2="580"/><line x1="0" y1="600" x2="1200" y2="600"/>
+    <line x1="0" y1="620" x2="1200" y2="620"/><line x1="0" y1="640" x2="1200" y2="640"/>
+    <line x1="0" y1="660" x2="1200" y2="660"/><line x1="0" y1="680" x2="1200" y2="680"/>
+    <line x1="0" y1="700" x2="1200" y2="700"/><line x1="0" y1="720" x2="1200" y2="720"/>
+  </g>
+  <g stroke="rgba(60,35,10,0.3)" stroke-width="0.8" fill="none">
+    <line x1="100" y1="560" x2="100" y2="720"/><line x1="200" y1="560" x2="200" y2="720"/>
+    <line x1="300" y1="560" x2="300" y2="720"/><line x1="400" y1="560" x2="400" y2="720"/>
+    <line x1="500" y1="560" x2="500" y2="720"/><line x1="600" y1="560" x2="600" y2="720"/>
+    <line x1="700" y1="560" x2="700" y2="720"/><line x1="800" y1="560" x2="800" y2="720"/>
+    <line x1="900" y1="560" x2="900" y2="720"/><line x1="1000" y1="560" x2="1000" y2="720"/>
+    <line x1="1100" y1="560" x2="1100" y2="720"/>
+  </g>
+  <!-- BOOKCASE LEFT (floor to ceiling) -->
+  <rect x="0" y="0" width="220" height="560" fill="#4a3018"/>
+  <rect x="0" y="0" width="220" height="560" fill="none" stroke="#3a2010" stroke-width="2"/>
+  <!-- Shelf lines left -->
+  <g stroke="#3a2010" stroke-width="2" fill="none">
+    <line x1="0" y1="78" x2="220" y2="78"/><line x1="0" y1="155" x2="220" y2="155"/>
+    <line x1="0" y1="232" x2="220" y2="232"/><line x1="0" y1="309" x2="220" y2="309"/>
+    <line x1="0" y1="386" x2="220" y2="386"/><line x1="0" y1="463" x2="220" y2="463"/>
+  </g>
+  <!-- Book spines left – row 1 -->
+  <g font-family="none">
+    <rect x="4"  y="10" width="14" height="66" fill="#8a2010"/><rect x="20" y="14" width="12" height="62" fill="#2a4820"/>
+    <rect x="34" y="10" width="16" height="66" fill="#4a2880"/><rect x="52" y="12" width="12" height="64" fill="#806010"/>
+    <rect x="66" y="10" width="14" height="66" fill="#3a5030"/><rect x="82" y="14" width="13" height="62" fill="#7a2018"/>
+    <rect x="97" y="10" width="15" height="66" fill="#204040"/><rect x="114" y="13" width="11" height="63" fill="#603820"/>
+    <rect x="127" y="10" width="16" height="66" fill="#5a2020"/><rect x="145" y="12" width="12" height="64" fill="#285030"/>
+    <rect x="159" y="10" width="14" height="66" fill="#502870"/><rect x="175" y="14" width="13" height="62" fill="#8a5010"/>
+    <rect x="190" y="10" width="14" height="66" fill="#1e5040"/>
+    <!-- Row 2 -->
+    <rect x="4"  y="87" width="12" height="66" fill="#4a6030"/><rect x="18" y="83" width="15" height="70" fill="#602010"/>
+    <rect x="35" y="87" width="13" height="66" fill="#503070"/><rect x="50" y="85" width="14" height="68" fill="#284040"/>
+    <rect x="66" y="87" width="16" height="66" fill="#703010"/><rect x="84" y="83" width="12" height="70" fill="#205030"/>
+    <rect x="98" y="87" width="14" height="66" fill="#3a1830"/><rect x="114" y="85" width="13" height="68" fill="#5a5010"/>
+    <rect x="129" y="87" width="15" height="66" fill="#1e4830"/><rect x="146" y="83" width="12" height="70" fill="#782010"/>
+    <rect x="160" y="87" width="14" height="66" fill="#382870"/><rect x="176" y="85" width="13" height="68" fill="#805020"/>
+    <rect x="191" y="87" width="13" height="66" fill="#304060"/>
+    <!-- Row 3 -->
+    <rect x="4"  y="164" width="16" height="66" fill="#205828"/><rect x="22" y="160" width="14" height="70" fill="#782010"/>
+    <rect x="38" y="164" width="12" height="66" fill="#604028"/><rect x="52" y="162" width="15" height="68" fill="#304060"/>
+    <rect x="69" y="164" width="13" height="66" fill="#581818"/><rect x="84" y="160" width="15" height="70" fill="#285018"/>
+    <rect x="101" y="164" width="13" height="66" fill="#482888"/><rect x="116" y="162" width="14" height="68" fill="#286030"/>
+    <rect x="132" y="164" width="12" height="66" fill="#782020"/><rect x="146" y="160" width="16" height="70" fill="#383028"/>
+    <rect x="164" y="164" width="14" height="66" fill="#486018"/><rect x="180" y="162" width="13" height="68" fill="#702818"/>
+    <!-- Row 4 -->
+    <rect x="4"  y="241" width="15" height="66" fill="#386020"/><rect x="21" y="239" width="12" height="68" fill="#780820"/>
+    <rect x="35" y="241" width="16" height="66" fill="#303888"/><rect x="53" y="237" width="13" height="70" fill="#806028"/>
+    <rect x="68" y="241" width="14" height="66" fill="#284830"/><rect x="84" y="239" width="12" height="68" fill="#602818"/>
+    <rect x="98" y="241" width="15" height="66" fill="#5a2050"/><rect x="115" y="237" width="13" height="70" fill="#207038"/>
+    <rect x="130" y="241" width="14" height="66" fill="#304880"/><rect x="146" y="239" width="16" height="68" fill="#8a5010"/>
+    <rect x="164" y="241" width="12" height="66" fill="#3a3870"/><rect x="178" y="237" width="14" height="70" fill="#206048"/>
+    <!-- Row 5 -->
+    <rect x="4"  y="318" width="13" height="66" fill="#603020"/><rect x="19" y="316" width="15" height="68" fill="#305828"/>
+    <rect x="36" y="318" width="14" height="66" fill="#404080"/><rect x="52" y="314" width="16" height="70" fill="#906020"/>
+    <rect x="70" y="318" width="13" height="66" fill="#582028"/><rect x="85" y="316" width="12" height="68" fill="#286040"/>
+    <rect x="99" y="318" width="16" height="66" fill="#702818"/><rect x="117" y="314" width="13" height="70" fill="#3a5020"/>
+    <rect x="132" y="318" width="14" height="66" fill="#5a1820"/><rect x="148" y="316" width="12" height="68" fill="#204060"/>
+    <rect x="162" y="318" width="16" height="66" fill="#806828"/><rect x="180" y="314" width="13" height="70" fill="#3a2870"/>
+    <!-- Row 6 -->
+    <rect x="4"  y="395" width="14" height="66" fill="#285040"/><rect x="20" y="393" width="13" height="68" fill="#782010"/>
+    <rect x="35" y="395" width="16" height="66" fill="#304880"/><rect x="53" y="391" width="12" height="70" fill="#905030"/>
+    <rect x="67" y="395" width="15" height="66" fill="#1e6038"/><rect x="84" y="393" width="14" height="68" fill="#582870"/>
+    <rect x="100" y="395" width="12" height="66" fill="#703818"/><rect x="114" y="391" width="16" height="70" fill="#286050"/>
+    <rect x="132" y="395" width="13" height="66" fill="#402080"/><rect x="147" y="393" width="15" height="68" fill="#806820"/>
+    <rect x="164" y="395" width="14" height="66" fill="#502030"/><rect x="180" y="391" width="13" height="70" fill="#204838"/>
+  </g>
+  <!-- BOOKCASE RIGHT -->
+  <rect x="980" y="0" width="220" height="560" fill="#4a3018"/>
+  <rect x="980" y="0" width="220" height="560" fill="none" stroke="#3a2010" stroke-width="2"/>
+  <g stroke="#3a2010" stroke-width="2" fill="none">
+    <line x1="980" y1="78"  x2="1200" y2="78"/><line x1="980" y1="155" x2="1200" y2="155"/>
+    <line x1="980" y1="232" x2="1200" y2="232"/><line x1="980" y1="309" x2="1200" y2="309"/>
+    <line x1="980" y1="386" x2="1200" y2="386"/><line x1="980" y1="463" x2="1200" y2="463"/>
+  </g>
+  <!-- Book spines right – color variety -->
+  <g>
+    <rect x="984" y="10" width="13" height="66" fill="#3a5030"/><rect x="999" y="12" width="15" height="64" fill="#7a2818"/>
+    <rect x="1016" y="10" width="13" height="66" fill="#206040"/><rect x="1031" y="13" width="15" height="63" fill="#502880"/>
+    <rect x="1048" y="10" width="13" height="66" fill="#704018"/><rect x="1063" y="12" width="15" height="64" fill="#285828"/>
+    <rect x="1080" y="10" width="16" height="66" fill="#802018"/><rect x="1098" y="14" width="12" height="62" fill="#206040"/>
+    <rect x="1112" y="10" width="15" height="66" fill="#484868"/><rect x="1129" y="12" width="13" height="64" fill="#306830"/>
+    <rect x="1144" y="10" width="16" height="66" fill="#803020"/><rect x="1162" y="14" width="13" height="62" fill="#3a5880"/>
+    <rect x="1177" y="10" width="15" height="66" fill="#5a2060"/>
+    <rect x="984" y="87" width="15" height="66" fill="#285840"/><rect x="1001" y="83" width="13" height="70" fill="#703820"/>
+    <rect x="1016" y="87" width="16" height="66" fill="#3a2870"/><rect x="1034" y="85" width="12" height="68" fill="#1e5840"/>
+    <rect x="1048" y="87" width="14" height="66" fill="#806028"/><rect x="1064" y="83" width="15" height="70" fill="#2a3870"/>
+    <rect x="1081" y="87" width="13" height="66" fill="#583018"/><rect x="1096" y="85" width="16" height="68" fill="#205038"/>
+    <rect x="1114" y="87" width="12" height="66" fill="#702058"/><rect x="1128" y="83" width="15" height="70" fill="#806020"/>
+    <rect x="1145" y="87" width="14" height="66" fill="#304870"/><rect x="1161" y="85" width="13" height="68" fill="#582830"/>
+    <rect x="1176" y="87" width="16" height="66" fill="#205840"/>
+    <rect x="984" y="164" width="13" height="66" fill="#703820"/><rect x="999" y="160" width="16" height="70" fill="#284870"/>
+    <rect x="1017" y="164" width="12" height="66" fill="#582030"/><rect x="1031" y="162" width="15" height="68" fill="#186040"/>
+    <rect x="1048" y="164" width="14" height="66" fill="#8a4820"/><rect x="1064" y="160" width="13" height="70" fill="#3a2878"/>
+    <rect x="1079" y="164" width="16" height="66" fill="#1e5830"/><rect x="1097" y="162" width="12" height="68" fill="#602828"/>
+    <rect x="1111" y="164" width="15" height="66" fill="#204070"/><rect x="1128" y="160" width="14" height="70" fill="#806018"/>
+    <rect x="1144" y="164" width="13" height="66" fill="#502860"/><rect x="1159" y="162" width="16" height="68" fill="#285840"/>
+    <rect x="1177" y="164" width="13" height="66" fill="#703020"/>
+  </g>
+  <!-- LARGE MIRROR (central, ornate) -->
+  <rect x="340" y="28" width="190" height="310" rx="8" fill="#3a4838" stroke="#6a5828" stroke-width="5"/>
+  <rect x="346" y="34" width="178" height="298" rx="6" fill="#1a2818" stroke="#8a7040" stroke-width="2"/>
+  <!-- Mirror surface shine -->
+  <rect x="348" y="36" width="174" height="294" rx="5" fill="url(#mir3z)"/>
+  <!-- Mirror ornate frame details -->
+  <rect x="340" y="28"  width="190" height="12" rx="6 6 0 0" fill="#7a6038"/>
+  <rect x="340" y="326" width="190" height="12" rx="0 0 6 6" fill="#7a6038"/>
+  <rect x="340" y="28"  width="12" height="310" rx="6 0 0 6" fill="#6a5028"/>
+  <rect x="518" y="28"  width="12" height="310" rx="0 6 6 0" fill="#6a5028"/>
+  <!-- Mirror reflection: silhouette of figure not present in room (puzzle hint) -->
+  <g opacity="0.28">
+    <ellipse cx="435" cy="145" rx="14" ry="13" fill="#8a9ab0"/><!-- head -->
+    <rect x="425" y="156" width="20" height="48" rx="5 5 0 0" fill="#7a8aa0"/><!-- coat body -->
+    <polygon points="425,204 418,224 435,215" fill="#6a7a90"/>
+    <polygon points="445,204 452,224 435,215" fill="#6a7a90"/>
+  </g>
+  <!-- Caption below mirror -->
+  <text x="435" y="352" font-family="Georgia,serif" font-size="11" fill="rgba(200,185,140,0.65)" text-anchor="middle" font-style="italic">Espejo de consulta – 1842</text>
+  <!-- Reading table center -->
+  <rect x="400" y="404" width="520" height="82" rx="6" fill="#5a3810" stroke="#7a5020" stroke-width="2"/>
+  <rect x="400" y="394" width="520" height="16" rx="4" fill="#7a5018"/>
+  <!-- Table legs -->
+  <rect x="415" y="482" width="14" height="80" fill="#4a2c0a"/>
+  <rect x="590" y="482" width="14" height="80" fill="#4a2c0a"/>
+  <rect x="755" y="482" width="14" height="80" fill="#4a2c0a"/>
+  <rect x="895" y="482" width="14" height="80" fill="#4a2c0a"/>
+  <!-- Books on table -->
+  <rect x="418" y="412" width="90" height="66" rx="3" fill="#e8d8a8" stroke="#8a7030" stroke-width="1.5" transform="rotate(-7 463 445)"/>
+  <rect x="420" y="414" width="40" height="62" rx="2" fill="#e0d098" stroke="#8a7030" stroke-width="1" transform="rotate(-7 440 445)"/>
+  <g stroke="rgba(60,40,10,0.5)" stroke-width="0.8" transform="rotate(-7 463 445)">
+    <line x1="425" y1="422" x2="502" y2="422"/><line x1="425" y1="430" x2="502" y2="430"/>
+    <line x1="425" y1="438" x2="502" y2="438"/><line x1="425" y1="446" x2="502" y2="446"/>
+    <line x1="425" y1="454" x2="502" y2="454"/><line x1="425" y1="462" x2="502" y2="462"/>
+  </g>
+  <rect x="520" y="408" width="85" height="68" rx="3" fill="#d8c890" stroke="#8a7030" stroke-width="1.5" transform="rotate(5 562 442)"/>
+  <g stroke="rgba(60,40,10,0.5)" stroke-width="0.8" transform="rotate(5 562 442)">
+    <line x1="525" y1="420" x2="600" y2="420"/><line x1="525" y1="430" x2="600" y2="430"/>
+    <line x1="525" y1="440" x2="600" y2="440"/><line x1="525" y1="450" x2="600" y2="450"/>
+  </g>
+  <!-- Magnifying glass on table -->
+  <circle cx="656" cy="440" rx="26" ry="26" fill="none" stroke="#a07828" stroke-width="4" cx="656" cy="440" r="26"/>
+  <circle cx="656" cy="440" r="18" fill="rgba(200,220,240,0.2)" stroke="#a07828" stroke-width="2"/>
+  <line x1="676" y1="460" x2="696" y2="480" stroke="#a07828" stroke-width="4" stroke-linecap="round"/>
+  <!-- Lamp on table (oil lamp) -->
+  <rect x="820" y="404" width="22" height="30" rx="10" fill="#b09020" stroke="#806010" stroke-width="2"/>
+  <path d="M820,407 L832,394 L844,407" fill="none" stroke="#c0a030" stroke-width="2.5"/>
+  <circle cx="832" cy="392" r="7" fill="rgba(255,215,80,0.95)"/>
+  <ellipse cx="832" cy="400" rx="30" ry="22" fill="rgba(255,210,80,0.15)"/>
+  <!-- Newspaper / gazette clipping pinned to wall -->
+  <rect x="600" y="40" width="168" height="90" rx="3" fill="#ede0b8" stroke="#8a7030" stroke-width="1.5" transform="rotate(-3 684 85)"/>
+  <g stroke="rgba(60,40,10,0.45)" stroke-width="0.8" transform="rotate(-3 684 85)">
+    <line x1="608" y1="55" x2="762" y2="55"/><line x1="608" y1="64" x2="762" y2="64"/>
+    <line x1="608" y1="73" x2="762" y2="73"/><line x1="608" y1="82" x2="762" y2="82"/>
+    <line x1="608" y1="91" x2="762" y2="91"/>
+    <line x1="608" y1="100" x2="720" y2="100"/>
+  </g>
+  <text x="684" y="52" font-family="Georgia,serif" font-size="10" fill="#3a2806" text-anchor="middle" font-weight="700" transform="rotate(-3 684 52)">LA GACETA DEL BRONCE</text>
+  <!-- Reading chair + figure (silhouette) -->
+  <g opacity="0.6" transform="translate(790 460)">
+    <!-- Chair -->
+    <rect x="0" y="0" width="82" height="62" rx="6" fill="#4a3010"/>
+    <rect x="0" y="-35" width="82" height="40" rx="6" fill="#5a3818"/>
+    <rect x="-10" y="0" width="14" height="90" rx="4" fill="#3a2008"/>
+    <rect x="78" y="0" width="14" height="90" rx="4" fill="#3a2008"/>
+    <!-- Seated person silhouette -->
+    <ellipse cx="41" cy="-50" rx="14" ry="12" fill="#0c1410"/>
+    <rect x="30" y="-38" width="22" height="36" rx="5 5 0 0" fill="#0c1410"/>
+    <!-- Book held -->
+    <rect x="10" y="-20" width="34" height="24" rx="2" fill="#1e1008" transform="rotate(-15 27 -8)"/>
+  </g>
+  <!-- Overhead lamp chain -->
+  <line x1="700" y1="0" x2="700" y2="50" stroke="#8a6028" stroke-width="2.5"/>
+  <path d="M675,50 L725,50 L730,85 L670,85 Z" fill="#b09030" stroke="#806010" stroke-width="1.5"/>
+  <ellipse cx="700" cy="85" rx="22" ry="14" fill="rgba(255,220,100,0.9)"/>
+  <ellipse cx="700" cy="100" rx="36" ry="28" fill="rgba(255,210,80,0.18)"/>
+  <!-- Second lamp far right -->
+  <line x1="920" y1="0" x2="920" y2="40" stroke="#8a6028" stroke-width="2"/>
+  <rect x="906" y="40" width="28" height="30" rx="6" fill="#9a8810" stroke="#6a5e08" stroke-width="1.5"/>
+  <rect x="907" y="41" width="26" height="26" rx="5" fill="rgba(255,224,100,0.88)"/>
+  <ellipse cx="920" cy="70" rx="28" ry="22" fill="rgba(255,210,80,0.15)"/>
+  <!-- Title label -->
+  <rect x="10" y="628" width="360" height="84" rx="10" fill="rgba(6,12,6,0.88)"/>
+  <rect x="14" y="632" width="352" height="76" rx="8" fill="none" stroke="rgba(180,160,80,0.45)" stroke-width="1.2"/>
+  <text x="190" y="661" font-family="Georgia,serif" font-size="18" fill="#f0d888" font-weight="700" text-anchor="middle">Biblioteca Municipal</text>
+  <text x="190" y="682" font-family="Georgia,serif" font-size="13" fill="#c8a450" text-anchor="middle">San Teodoro · Otoño 1912</text>
+  <text x="190" y="703" font-family="Georgia,serif" font-size="10" fill="#987840" text-anchor="middle" font-style="italic">«El espejo guarda el secreto del ángulo»</text>
+</svg>

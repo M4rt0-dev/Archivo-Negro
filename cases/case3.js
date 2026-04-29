@@ -1,10 +1,10 @@
 // CASO 3 — ESTÁTICA
 var CASE3 = {
-  title: "Estatica",
+  title: "Estática",
   year: "2024",
-  setting: "Comisaria 7, Brigada de Delitos Economicos",
-  tagline: "Una oficial muerta, un suicidio que no cuadra y un capitan que cerro el caso en 48 horas.",
-  intro: "3 de noviembre de 2024. La oficial Carmen Vidal fue encontrada muerta en su vehiculo.\nCausa oficial: suicidio. El caso fue cerrado en 48 horas por el capitan Rodrigo Mest.\nCopias de seguridad del servidor de emergencia sobrevivieron al borrado del sistema.\nEstas copias son lo que queda. Lee los archivos. Sigue el dinero. Encuentra la verdad.",
+  setting: "Comisaría 7, Brigada de Delitos Económicos",
+  tagline: "Una oficial muerta, un suicidio que no cuadra y un capitán que cerró el caso en 48 horas.",
+  intro: "3 de noviembre de 2024. La oficial Carmen Vidal fue encontrada muerta en su vehículo.\nCausa oficial: suicidio. El caso fue cerrado en 48 horas por el capitán Rodrigo Mest.\nCopias de seguridad del servidor de emergencia sobrevivieron al borrado del sistema.\nEstas copias son lo que queda. Lee los archivos. Sigue el dinero. Encuentra la verdad.",
   solveFile: "dossier_final.evd",
   startFiles: [
     "/inicio.txt",
@@ -17,31 +17,31 @@ var CASE3 = {
     "/conclusion/dossier_final.evd"
   ],
   hints: [
-    "Lee la autopsia. El forense Parra documenta anomalias. El apodo de Vidal entre companeros es la primera clave.",
-    "Usa 'examine disparo' y 'examine residuo' — el angulo del balazo y la ausencia de polvora en la mano derecha de Vidal lo demuestran todo.",
-    "Usa 'examine arma' para entender el error que delata el homicidio. Alguien coloco el arma en su mano despues del disparo.",
-    "cd expediente → unlock registro_llamadas.enc CARMELA — Las llamadas muestran que Mest sabia donde estaba Vidal.",
-    "Usa 'examine parking' para entender por que Mest eligio ese lugar. El vehiculo estaba en el angulo muerto de la unica camara.",
-    "Usa 'examine vidal' para ver el recorrido completo de 8 meses de investigacion en silencio que hizo la oficial.",
-    "Usa 'profile parra' para entender por que el forense firmo paro cardiaco y que hizo luego para preservar la verdad.",
-    "Usa 'search ia denuncia' — Vidal ya habia denunciado a Mest en 2022. El investigo su propia denuncia y la archivo en 3 dias.",
-    "Usa 'cd archivos' y lee turnos_mes.txt. Las camaras del deposito de evidencias se apagaban siempre los lunes. Coincide con los accesos de Mest.",
-    "Usa 'search evidencia cadena' para ver como Mest desviaba material del deposito.",
+    "Lee la autopsia. El forense Parra documenta anomalías. El apodo de Vidal entre compañeros es la primera clave.",
+    "Usa 'examine disparo' y 'examine residuo' — el ángulo del balazo y la ausencia de pólvora en la mano derecha de Vidal lo demuestran todo.",
+    "Usa 'examine arma' para entender el error que delata el homicidio. Alguien colocó el arma en su mano después del disparo.",
+    "cd expediente → unlock registro_llamadas.enc CARMELA — Las llamadas muestran que Mest sabía dónde estaba Vidal.",
+    "Usa 'examine parking' para entender por qué Mest eligió ese lugar. El vehículo estaba en el ángulo muerto de la única cámara.",
+    "Usa 'examine vidal' para ver el recorrido completo de 8 meses de investigación en silencio que hizo la oficial.",
+    "Usa 'profile parra' para entender por qué el forense firmó paro cardíaco y qué hizo luego para preservar la verdad.",
+    "Usa 'search ia denuncia' — Vidal ya había denunciado a Mest en 2022. Él investigó su propia denuncia y la archivó en 3 días.",
+    "Usa 'cd archivos' y lee turnos_mes.txt. Las cámaras del depósito de evidencias se apagaban siempre los lunes. Coincide con los accesos de Mest.",
+    "Usa 'search evidencia cadena' para ver cómo Mest desviaba material del depósito.",
     "Usa 'examine nexo' para entender la empresa pantalla. Luego 'examine deposito' para ver el volumen total del desfalco.",
     "Usa 'search nexo transferencias' para ver las transferencias completas a Nexo Capital SL. La cuenta estaba a nombre de la madre de Mest.",
-    "Usa 'search fotos agenda' para ver la descripcion de las 20 fotografias que Kowal tomo antes de entregar la agenda a Mest.",
+    "Usa 'search fotos agenda' para ver la descripción de las 20 fotografías que Kowal tomó antes de entregar la agenda a Mest.",
     "Usa 'search correo seguro' para ver los correos borrados que delatan a Mest.",
-    "Usa 'search informante x7' para encontrar el aviso que Vidal recibio esa noche.",
-    "Usa 'examine fantasma' para entender el codename de Mest con sus contactos externos. Esa palabra aparece en la grabacion de X7.",
-    "La reunion en calle Virgo fue grabada. Usa 'search red virgo' y luego unlockea con la clave en el mensaje de X7.",
-    "Usa 'profile kowal' y 'profile ibarra' para entender como dos personas dentro del sistema se negaron a cubrir el crimen.",
-    "Usa 'examine ibarra' para entender el papel del sargento. Cortó la llamada de Vidal con Mest de pie detras de el.",
-    "Usa 'search ia informe' para leer el informe del juzgado anticorrupcion. Sin Kowal y X7, el caso habria quedado enterrado.",
+    "Usa 'search informante x7' para encontrar el aviso que Vidal recibió esa noche.",
+    "Usa 'examine fantasma' para entender el codename de Mest con sus contactos externos. Esa palabra aparece en la grabación de X7.",
+    "La reunión en calle Virgo fue grabada. Usa 'search red virgo' y luego unlockea con la clave en el mensaje de X7.",
+    "Usa 'profile kowal' y 'profile ibarra' para entender cómo dos personas dentro del sistema se negaron a cubrir el crimen.",
+    "Usa 'examine ibarra' para entender el papel del sargento. Cortó la llamada de Vidal con Mest de pie detrás de él.",
+    "Usa 'search ia informe' para leer el informe del juzgado anticorrupción. Sin Kowal y X7, el caso habría quedado enterrado.",
     "El codename de Mest en comunicaciones externas desbloquea el dossier final.",
-    "Usa 'timeline' para ver el caso completo desde el primer desfalco en 2022 hasta la detencion de Mest el 22 de noviembre.",
+    "Usa 'timeline' para ver el caso completo desde el primer desfalco en 2022 hasta la detención de Mest el 22 de noviembre.",
     "Comandos extra: map, timeline, evidence, profile [nombre], examine [termino]."
   ],
-  map: "COMISARIA 7 — BRIGADA DELITOS ECONOMICOS\n" +
+  map: "COMISARÍA 7 — BRIGADA DELITOS ECONÓMICOS\n" +
     "═══════════════════════════════════════════════════\n" +
     "  ┌──────────────┐  ┌──────────┐  ┌────────────────┐\n" +
     "  │  DESPACHO    │  │ SALA DE  │  │   DEPOSITO DE  │\n" +
@@ -56,47 +56,47 @@ var CASE3 = {
     "  └──────────────┘  └──────────────────────────────┘\n" +
     "\n" +
     "  EXTERIOR:\n" +
-    "  ★ Parking Poligono Norte — ESCENA DEL CRIMEN\n" +
-    "  ★ Calle Virgo esquina norte — REUNION GRABADA",
+    "  ★ Parking Polígono Norte — ESCENA DEL CRIMEN\n" +
+    "  ★ Calle Virgo esquina norte — REUNIÓN GRABADA",
   profiles: {
-    vidal: "OFICIAL CARMEN VIDAL — Victima\nEdad: 34. Agente Primera, Brigada de Delitos Economicos, Comisaria 7.\nEspecialidad: rastreo de fondos y activos. 8 anos en el cuerpo.\nApodo entre companeros: Carmela.\nEstaba investigando de forma confidencial el desvio de fondos del deposito de evidencias.\nDescubrio que el capitan Mest era el principal responsable. Muerta el 4/11/2024.",
-    mest: "CAPITAN RODRIGO MEST — Principal sospechoso\nEdad: 52. Jefe de la Brigada de Delitos Economicos desde 2018. 19 anos en el cuerpo.\nHistorial: dos investigaciones internas previas, ambas archivadas.\nDesviaba fondos y evidencias hacia la empresa pantalla Nexo Capital SL (registrada en Malta).\nCodname en comunicaciones externas: EL FANTASMA.\nDetenido el 22 de noviembre de 2024.",
-    kowal: "AUDITOR A. KOWAL — Tecnico forense\nEdad: 41. Tecnico informatico forense adscrito a la comisaria.\nRecibio un mensaje de Vidal a las 23:50 diciendo que tenia las pruebas.\nFue el quien activo el proceso de auditoria interna tras la muerte de Vidal.\nGuardo una fotografia del contenido de la agenda de Vidal antes de entregarla a Mest.",
-    parra: "DR. PARRA — Medico forense\nEdad: 58. Instituto Medico Legal. Forense oficial del caso.\nDocumento anomalias en el patron de disparo que contradicen el suicidio.\nSu solicitud de segunda pericia fue denegada por el capitan Mest.\nCollaborò con Kowal de forma confidencial para preservar las pruebas.",
-    ibarra: "SGT. TOMAS IBARRA — Sargento de guardia\nEdad: 38. Llevaba 12 anos trabajando para Mest.\nSeguia ordenes sin cuestionar. Cortó la llamada de Vidal a las 00:07.\nDeclaro ante Kowal que Mest estaba detras de el cuando cortó la llamada.\nCollaborò con la auditoria interna por miedo a ser implicado directamente.",
-    x7: "INFORMANTE X7 — Identidad no revelada en este expediente\nConocido por su alias en la comunicacion con Vidal.\nSabia de la empresa pantalla Nexo Capital SL y su conexion con Mest.\nGrabó la reunion en calle Virgo. Esa grabacion es la prueba mas directa del homicidio.\nSu identidad real fue protegida por el juez anticorrupcion."
+    vidal: "OFICIAL CARMEN VIDAL — Víctima\nEdad: 34. Agente Primera, Brigada de Delitos Económicos, Comisaría 7.\nEspecialidad: rastreo de fondos y activos. 8 años en el cuerpo.\nApodo entre compañeros: Carmela.\nEstaba investigando de forma confidencial el desvío de fondos del depósito de evidencias.\nDescubrió que el capitán Mest era el principal responsable. Muerta el 4/11/2024.",
+    mest: "CAPITÁN RODRIGO MEST — Principal sospechoso\nEdad: 52. Jefe de la Brigada de Delitos Económicos desde 2018. 19 años en el cuerpo.\nHistorial: dos investigaciones internas previas, ambas archivadas.\nDesviaba fondos y evidencias hacia la empresa pantalla Nexo Capital SL (registrada en Malta).\nCodename en comunicaciones externas: EL FANTASMA.\nDetenido el 22 de noviembre de 2024.",
+    kowal: "AUDITOR A. KOWAL — Técnico forense\nEdad: 41. Técnico informático forense adscrito a la comisaría.\nRecibió un mensaje de Vidal a las 23:50 diciendo que tenía las pruebas.\nFue él quien activó el proceso de auditoría interna tras la muerte de Vidal.\nGuardó una fotografía del contenido de la agenda de Vidal antes de entregarla a Mest.",
+    parra: "DR. PARRA — Médico forense\nEdad: 58. Instituto Médico Legal. Forense oficial del caso.\nDocumentó anomalías en el patrón de disparo que contradicen el suicidio.\nSu solicitud de segunda pericia fue denegada por el capitán Mest.\nColaboró con Kowal de forma confidencial para preservar las pruebas.",
+    ibarra: "SGT. TOMÁS IBARRA — Sargento de guardia\nEdad: 38. Llevaba 12 años trabajando para Mest.\nSeguía órdenes sin cuestionar. Cortó la llamada de Vidal a las 00:07.\nDeclaró ante Kowal que Mest estaba detrás de él cuando cortó la llamada.\nColaboró con la auditoría interna por miedo a ser implicado directamente.",
+    x7: "INFORMANTE X7 — Identidad no revelada en este expediente\nConocido por su alias en la comunicación con Vidal.\nSabía de la empresa pantalla Nexo Capital SL y su conexión con Mest.\nGrabó la reunión en calle Virgo. Esa grabación es la prueba más directa del homicidio.\nSu identidad real fue protegida por el juez anticorrupción."
   },
   examine: {
-    disparo: "El angulo del disparo es el elemento mas importante de la autopsia.\nEn un suicidio con pistola en la sien derecha (diestra), el angulo esperado es horizontal o descendente.\nEl disparo real tenia un angulo de 15 grados por encima de la horizontal, desde abajo.\nEso es fisicamente imposible si la victima dispara con su propia mano.",
-    residuo: "Los residuos de polvora son la segunda prueba clave.\nEn un disparo a quemarropa con la mano derecha (dominante de Vidal), los residuos son abundantes en esa mano.\nLa autopsia encontro ausencia de residuos en la mano derecha.\nEn la mano izquierda habia micropolvora secundaria, consistente con estar cerca del arma pero no dispararla.",
-    arma: "El arma era la pistola reglamentaria de la oficial Vidal.\nLa encontraron en su mano derecha. Pero los residuos no coinciden con esa posicion.\nAlguien la coloco en la mano de Vidal despues del disparo.\nEste es el error tecnico mas grave del escenario montado.",
-    nexo: "Nexo Capital SL es la empresa pantalla creada por Mest para recibir los fondos desviados.\nFue registrada en Malta en 2019. Titular: Estela Garzon (madre del capitan Mest).\nLas transferencias desde la brigada usaban el alias interno NEXO.\nLa cuenta de destino era una IBAN francesa con origen en las Islas Caiman.",
-    "fantasma": "El codename EL FANTASMA era el alias de Mest en sus comunicaciones con contactos externos.\nAparece en el mensaje de X7 y en la grabacion de la reunion en calle Virgo.\nEra el nombre con el que se identificaba al contratar servicios de 'resolucion de problemas'.\nEs la ultima clave del caso.",
-    deposito: "El deposito de evidencias de la brigada fue el origen del desfalco.\nMest tenia acceso permanente desde 2021 (solicitud aprobada por el mismo).\nDesviaba material y fondos en cantidades que parecian no notarse: 13.000 EUR en un caso, 900 gramos en otro.\nPero en cuatro anos sumaban mas de 150.000 EUR y varias kilos de material incautado.",
-    vidal: "Carmen Vidal llevaba ocho meses investigando a Mest de forma confidencial.\nTenia documentos de los accesos al deposito, las transferencias y los correos.\nEnvio un mensaje a Kowal a las 23:50 diciendo 'tengo las pruebas'. Fue la ultima comunicacion antes de su muerte.\nSu agenda personal fue sustraida de la escena del crimen por el propio Mest.",
-    agenda: "La agenda de cuero de Vidal fue encontrada bajo el asiento de su vehiculo.\nContenia notas sobre la conexion entre Mest, el deposito y la cuenta NEXO.\nTenia al menos 3 paginas arrancadas. Las paginas que quedaban mencionaban el nombre NEXO.\nKowal la fotografio antes de entregarsela a Mest. Las fotos son una prueba clave.",
-    calle: "Calle Virgo, esquina norte, es el punto de encuentro donde X7 vio a Vidal a las 23:28.\nVidal fue al encuentro sola a pesar de la advertencia de X7.\nMest llego con al menos dos personas mas. Forcejeo y disparo.\nX7 grabo todo desde una posicion elevada (ventana de edificio contiguo).",
-    est: "Estela Garzon es la madre del capitan Mest.\nFue la titular formal de Nexo Capital SL sin conocer exactamente para que se usaba la empresa.\nEn 2024, cuando Mest fue detenido, declaro que su hijo le habia pedido 'aparecer en unos documentos de empresa'.\nNo fue acusada de ningun delito.",
-    kowal: "A. Kowal es el forense informatico que activo la investigacion.\nRecibio el ultimo mensaje de Vidal a las 23:50. Guardo la fotografia de la agenda.\nTrabajó en secreto durante dos semanas antes de contactar con el juzgado anticorrupcion.\nSin Kowal, el caso habria quedado enterrado.",
-    ibarra: "El sargento Ibarra es el testimonio mas fragil pero mas valioso.\nCortó la llamada de Vidal a las 00:07 con Mest detras de el.\nSu declaracion es voluntaria: fue a Kowal por propia iniciativa.\nDecidio hablar porque no queria cargar con una muerte en su conciencia.",
-    "parking": "El parking del poligono norte fue elegido porque tenia pocas camaras.\nLa unica camara del parking apuntaba hacia la entrada, no hacia el fondo donde estaba el vehiculo de Vidal.\nLa eleccion de ese lugar especifico sugiere conocimiento previo de la topografia del parking.",
-    transferencia: "Las transferencias de Mest a Nexo Capital se hacian siempre los lunes.\nLos lunes era cuando el deposito de evidencias tenia menos supervision.\nLas firmas en las transferencias (R.M.) son de Mest pero aparecen como 'autorizacion de transferencia de material'.\nEn los libros de la brigada, aparecen como gastos operativos ordinarios."
+      disparo: "El ángulo del disparo es el elemento más importante de la autopsia.\nEn un suicidio con pistola en la sien derecha (diestra), el ángulo esperado es horizontal o descendente.\nEl disparo real tenía un ángulo de 15 grados por encima de la horizontal, desde abajo.\nEso es físicamente imposible si la víctima dispara con su propia mano.",
+      residuo: "Los residuos de pólvora son la segunda prueba clave.\nEn un disparo a quemarropa con la mano derecha (dominante de Vidal), los residuos son abundantes en esa mano.\nLa autopsia encontró ausencia de residuos en la mano derecha.\nEn la mano izquierda había micropólvora secundaria, consistente con estar cerca del arma pero no dispararla.",
+      arma: "El arma era la pistola reglamentaria de la oficial Vidal.\nLa encontraron en su mano derecha. Pero los residuos no coinciden con esa posición.\nAlguien la colocó en la mano de Vidal después del disparo.\nEste es el error técnico más grave del escenario montado.",
+      nexo: "Nexo Capital SL es la empresa pantalla creada por Mest para recibir los fondos desviados.\nFue registrada en Malta en 2019. Titular: Estela Garzon (madre del capitán Mest).\nLas transferencias desde la brigada usaban el alias interno NEXO.\nLa cuenta de destino era una IBAN francesa con origen en las Islas Caimán.",
+      "fantasma": "El codename EL FANTASMA era el alias de Mest en sus comunicaciones con contactos externos.\nAparece en el mensaje de X7 y en la grabación de la reunión en calle Virgo.\nEra el nombre con el que se identificaba al contratar servicios de 'resolución de problemas'.\nEs la última clave del caso.",
+      deposito: "El depósito de evidencias de la brigada fue el origen del desfalco.\nMest tenía acceso permanente desde 2021 (solicitud aprobada por él mismo).\nDesviaba material y fondos en cantidades que parecían no notarse: 13.000 EUR en un caso, 900 gramos en otro.\nPero en cuatro años sumaban más de 150.000 EUR y varios kilos de material incautado.",
+      vidal: "Carmen Vidal llevaba ocho meses investigando a Mest de forma confidencial.\nTenía documentos de los accesos al depósito, las transferencias y los correos.\nEnvió un mensaje a Kowal a las 23:50 diciendo 'tengo las pruebas'. Fue la última comunicación antes de su muerte.\nSu agenda personal fue sustraída de la escena del crimen por el propio Mest.",
+      agenda: "La agenda de cuero de Vidal fue encontrada bajo el asiento de su vehículo.\nContenía notas sobre la conexión entre Mest, el depósito y la cuenta NEXO.\nTenía al menos 3 páginas arrancadas. Las páginas que quedaban mencionaban el nombre NEXO.\nKowal la fotografió antes de entregársela a Mest. Las fotos son una prueba clave.",
+      calle: "Calle Virgo, esquina norte, es el punto de encuentro donde X7 vio a Vidal a las 23:28.\nVidal fue al encuentro sola a pesar de la advertencia de X7.\nMest llegó con al menos dos personas más. Forcejeó y disparó.\nX7 grabó todo desde una posición elevada (ventana de edificio contiguo).",
+      est: "Estela Garzon es la madre del capitán Mest.\nFue la titular formal de Nexo Capital SL sin conocer exactamente para qué se usaba la empresa.\nEn 2024, cuando Mest fue detenido, declaró que su hijo le había pedido 'aparecer en unos documentos de empresa'.\nNo fue acusada de ningún delito.",
+      kowal: "A. Kowal es el forense informático que activó la investigación.\nRecibió el último mensaje de Vidal a las 23:50. Guardó la fotografía de la agenda.\nTrabajó en secreto durante dos semanas antes de contactar con el juzgado anticorrupción.\nSin Kowal, el caso habría quedado enterrado.",
+      ibarra: "El sargento Ibarra es el testimonio más frágil pero más valioso.\nCortó la llamada de Vidal a las 00:07 con Mest detrás de él.\nSu declaración es voluntaria: fue a Kowal por propia iniciativa.\nDecidió hablar porque no quería cargar con una muerte en su conciencia.",
+      "parking": "El parking del polígono norte fue elegido porque tenía pocas cámaras.\nLa única cámara del parking apuntaba hacia la entrada, no hacia el fondo donde estaba el vehículo de Vidal.\nLa elección de ese lugar específico sugiere conocimiento previo de la topografía del parking.",
+      transferencia: "Las transferencias de Mest a Nexo Capital se hacían siempre los lunes.\nLos lunes era cuando el depósito de evidencias tenía menos supervisión.\nLas firmas en las transferencias (R.M.) son de Mest pero aparecen como 'autorización de transferencia de material'.\nEn los libros de la brigada, aparecen como gastos operativos ordinarios."
   },
   timeline: [
-    { time: "2021  (oct.)", event: "Mest solicita y aprueba su propio acceso permanente al deposito de evidencias.", trigger: "/personal/perfil_mest.txt" },
+    { time: "2021  (oct.)", event: "Mest solicita y aprueba su propio acceso permanente al depósito de evidencias.", trigger: "/personal/perfil_mest.txt" },
     { time: "2022  (ene.)", event: "Primera transferencia identificada a Nexo Capital SL. Importe: 12.000 EUR.", trigger: "/archivos/transferencias.enc" },
-    { time: "2024  (feb.)", event: "Vidal empieza a investigar irregularidades en el deposito tras cerrar un caso.", trigger: "/personal/ficha_vidal.txt" },
+    { time: "2024  (feb.)", event: "Vidal empieza a investigar irregularidades en el depósito tras cerrar un caso.", trigger: "/personal/ficha_vidal.txt" },
     { time: "2024  (oct.)", event: "Vidal recibe material del informante X7 sobre Nexo Capital SL.", trigger: "/informante/mensaje_x7.txt" },
-    { time: "02/11  23:17", event: "Mest envia correo cifrado pidiendo 'neutralizar el problema Vidal'.", trigger: "/personal/correos_internos.txt" },
+    { time: "02/11  23:17", event: "Mest envía correo cifrado pidiendo 'neutralizar el problema Vidal'.", trigger: "/personal/correos_internos.txt" },
     { time: "03/11  09:44", event: "Respuesta cifrada: 'protocolo del parking autorizado'.", trigger: "/personal/correos_internos.txt" },
-    { time: "03/11  22:00", event: "X7 envía advertencia a Vidal: reunion en calle Virgo puede estar caliente.", trigger: "/informante/mensaje_x7.txt" },
-    { time: "03/11  23:28", event: "Vidal acude a calle Virgo. Mest llega con dos acompanantes. X7 lo graba.", trigger: "/informante/reunion_grabada.enc" },
-    { time: "03/11  23:50", event: "Vidal envia ultimo mensaje a Kowal: 'tengo las pruebas'. Llamada a las 00:02 cortada.", trigger: "/expediente/registro_llamadas.enc" },
-    { time: "04/11  00:07", event: "Vidal llama a comisaria. Ibarra corta la llamada. Mest esta presente.", trigger: "/personal/ficha_ibarra.txt" },
-    { time: "04/11  00:11", event: "Mest llama a Vidal 28 segundos. Sabe donde esta.", trigger: "/expediente/registro_llamadas.enc" },
-    { time: "04/11  06:15", event: "Vehiculo de Vidal encontrado en parking del poligono norte.", trigger: "/expediente/caso_vidal.txt" },
+    { time: "03/11  22:00", event: "X7 envía advertencia a Vidal: reunión en calle Virgo puede estar caliente.", trigger: "/informante/mensaje_x7.txt" },
+    { time: "03/11  23:28", event: "Vidal acude a calle Virgo. Mest llega con dos acompañantes. X7 lo graba.", trigger: "/informante/reunion_grabada.enc" },
+    { time: "03/11  23:50", event: "Vidal envía último mensaje a Kowal: 'tengo las pruebas'. Llamada a las 00:02 cortada.", trigger: "/expediente/registro_llamadas.enc" },
+    { time: "04/11  00:07", event: "Vidal llama a comisaría. Ibarra corta la llamada. Mest está presente.", trigger: "/personal/ficha_ibarra.txt" },
+    { time: "04/11  00:11", event: "Mest llama a Vidal 28 segundos. Sabe dónde está.", trigger: "/expediente/registro_llamadas.enc" },
+    { time: "04/11  06:15", event: "Vehículo de Vidal encontrado en parking del polígono norte.", trigger: "/expediente/caso_vidal.txt" },
     { time: "04/11  10:00", event: "Mest abre y cierra el caso en menos de 48 horas. Causa: suicidio.", trigger: "/expediente/caso_vidal.txt" },
-    { time: "22/11  2024", event: "Juzgado anticorrupcion dicta orden de detencion contra Mest.", trigger: "/conclusion/dossier_final.evd" }
+    { time: "22/11  2024", event: "Juzgado anticorrupción dicta orden de detención contra Mest.", trigger: "/conclusion/dossier_final.evd" }
   ],
   filesystem: {
     type: "dir",

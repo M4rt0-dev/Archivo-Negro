@@ -27,8 +27,9 @@
 <script src="cases/case2.js"></script>
 <script src="cases/case3.js"></script>
 <script src="cases/case4.js"></script>
+<script src="cases/case5.js"></script>
 <script>
-var CASES=[CASE1,CASE2,CASE3,CASE4];
+var CASES=[CASE1,CASE2,CASE3,CASE4,CASE5];
 
 /* ==== ESTADO ==== */
 var G={mode:"menu",ci:-1,cwd:[],unlocked:new Set(),revealed:new Set(),solved:false,hintIdx:0,history:[],hpos:-1,read:new Set()};
@@ -221,6 +222,10 @@ function run(raw){
 /* ==== ARRANQUE ==== */
 function startCase(idx){
   var c=CASES[idx];
+  if(c.launch){
+    window.location.href=c.launch;
+    return;
+  }
   G={mode:"playing",ci:idx,cwd:[],unlocked:new Set(),revealed:new Set(c.startFiles),solved:false,hintIdx:0,history:G.history,hpos:-1,read:new Set()};
   trm.innerHTML="";ttl.textContent="[CASO "+(idx+1)+"] "+c.title.toUpperCase();upSts();
   echo("═".repeat(60),"ok");

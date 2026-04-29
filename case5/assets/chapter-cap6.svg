@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 360" role="img" aria-label="Capitulo VI - El Veredicto del Reloj Maestro">
+  <defs>
+    <linearGradient id="chamber6" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#04080e"/><stop offset="45%" stop-color="#080e16"/><stop offset="100%" stop-color="#0c1420"/></linearGradient>
+    <radialGradient id="gearGlow" cx="43%" cy="45%" r="52%"><stop offset="0%" stop-color="#c09820" stop-opacity="0.8"/><stop offset="55%" stop-color="#c09820" stop-opacity="0.3"/><stop offset="100%" stop-color="#c09820" stop-opacity="0"/></radialGradient>
+    <radialGradient id="cylinderGlow" cx="50%" cy="60%" r="55%"><stop offset="0%" stop-color="#f0e080" stop-opacity="0.7"/><stop offset="100%" stop-color="#f0e080" stop-opacity="0"/></radialGradient>
+    <radialGradient id="spotlight" cx="43%" cy="8%" r="65%"><stop offset="0%" stop-color="rgba(240,220,160,0.45)"/><stop offset="100%" stop-color="rgba(240,220,160,0)"/></radialGradient>
+    <clipPath id="cc6"><rect x="10" y="10" width="860" height="340" rx="15"/></clipPath>
+  </defs>
+  <rect width="880" height="360" rx="18" fill="#02040a"/>
+  <rect x="10" y="10" width="860" height="340" rx="14" fill="url(#chamber6)"/>
+  <ellipse cx="380" cy="180" rx="320" ry="280" fill="url(#spotlight)" clip-path="url(#cc6)"/>
+  <ellipse cx="380" cy="185" rx="220" ry="200" fill="url(#gearGlow)" clip-path="url(#cc6)"/>
+  <g clip-path="url(#cc6)">
+    <rect x="10" y="292" width="860" height="58" fill="#1a1208"/>
+    <g stroke="rgba(60,45,15,0.5)" stroke-width="1">
+      <line x1="10" y1="308" x2="870" y2="308"/><line x1="10" y1="326" x2="870" y2="326"/>
+      <line x1="100" y1="292" x2="100" y2="350"/><line x1="220" y1="292" x2="220" y2="350"/><line x1="340" y1="292" x2="340" y2="350"/><line x1="460" y1="292" x2="460" y2="350"/><line x1="580" y1="292" x2="580" y2="350"/><line x1="700" y1="292" x2="700" y2="350"/><line x1="820" y1="292" x2="820" y2="350"/>
+    </g>
+    <rect x="10" y="10" width="55" height="285" fill="#161008"/>
+    <rect x="65" y="10" width="20" height="285" fill="#1e160a"/>
+    <rect x="795" y="10" width="75" height="285" fill="#161008"/>
+    <rect x="795" y="10" width="20" height="285" fill="#1e160a"/>
+    <rect x="65" y="10" width="6" height="285" fill="#806818"/>
+    <rect x="795" y="10" width="6" height="285" fill="#806818"/>
+    <path d="M85,10 Q440,42 795,10" fill="none" stroke="#8a7020" stroke-width="3"/>
+    <path d="M85,10 Q440,62 795,10" fill="none" stroke="#6a5010" stroke-width="2"/>
+  </g>
+  <g clip-path="url(#cc6)">
+    <circle cx="360" cy="178" r="148" fill="none" stroke="#c09820" stroke-width="8"/>
+    <circle cx="360" cy="178" r="135" fill="none" stroke="#a07810" stroke-width="3"/>
+    <circle cx="360" cy="178" r="90" fill="none" stroke="#c09820" stroke-width="5"/>
+    <circle cx="360" cy="178" r="78" fill="none" stroke="#a07810" stroke-width="3"/>
+    <circle cx="360" cy="178" r="40" fill="#1a1206" stroke="#c09820" stroke-width="5"/>
+    <circle cx="360" cy="178" r="25" fill="none" stroke="#a07810" stroke-width="3"/>
+    <circle cx="360" cy="178" r="10" fill="#c09820"/>
+    <g stroke="#c09820" stroke-width="7" stroke-linecap="square">
+      <line x1="360" y1="22" x2="360" y2="34"/><line x1="360" y1="322" x2="360" y2="334"/>
+      <line x1="204" y1="178" x2="216" y2="178"/><line x1="504" y1="178" x2="516" y2="178"/>
+      <line x1="250" y1="57" x2="258" y2="68"/><line x1="462" y1="57" x2="454" y2="68"/>
+      <line x1="250" y1="299" x2="258" y2="288"/><line x1="462" y1="299" x2="454" y2="288"/>
+      <line x1="286" y1="32" x2="292" y2="44"/><line x1="434" y1="32" x2="428" y2="44"/>
+      <line x1="216" y1="104" x2="226" y2="112"/><line x1="494" y1="104" x2="484" y2="112"/>
+      <line x1="216" y1="252" x2="226" y2="244"/><line x1="494" y1="252" x2="484" y2="244"/>
+      <line x1="286" y1="322" x2="292" y2="310"/><line x1="434" y1="322" x2="428" y2="310"/>
+    </g>
+    <g stroke="#b08818" stroke-width="4">
+      <line x1="360" y1="108" x2="360" y2="42"/><line x1="360" y1="248" x2="360" y2="314"/>
+      <line x1="296" y1="144" x2="248" y2="108"/><line x1="424" y1="144" x2="472" y2="108"/>
+      <line x1="296" y1="212" x2="248" y2="248"/><line x1="424" y1="212" x2="472" y2="248"/>
+    </g>
+    <g stroke="#906810" stroke-width="2">
+      <line x1="320" y1="138" x2="360" y2="178"/><line x1="400" y1="138" x2="360" y2="178"/>
+      <line x1="320" y1="218" x2="360" y2="178"/><line x1="400" y1="218" x2="360" y2="178"/>
+      <line x1="290" y1="178" x2="360" y2="178"/><line x1="430" y1="178" x2="360" y2="178"/>
+    </g>
+    <circle cx="545" cy="98" r="62" fill="none" stroke="#a07818" stroke-width="5"/>
+    <circle cx="545" cy="98" r="50" fill="none" stroke="#886010" stroke-width="2.5"/>
+    <circle cx="545" cy="98" r="28" fill="none" stroke="#a07818" stroke-width="3"/>
+    <circle cx="545" cy="98" r="10" fill="#a07818"/>
+    <g stroke="#a07818" stroke-width="5" stroke-linecap="square">
+      <line x1="545" y1="28" x2="545" y2="37"/><line x1="545" y1="159" x2="545" y2="168"/>
+      <line x1="475" y1="98" x2="484" y2="98"/><line x1="606" y1="98" x2="615" y2="98"/>
+      <line x1="495" y1="47" x2="501" y2="55"/><line x1="589" y1="47" x2="583" y2="55"/>
+      <line x1="495" y1="149" x2="501" y2="141"/><line x1="589" y1="149" x2="583" y2="141"/>
+    </g>
+    <g stroke="#906010" stroke-width="3"><line x1="545" y1="70" x2="545" y2="36"/><line x1="545" y1="126" x2="545" y2="160"/><line x1="517" y1="84" x2="495" y2="58"/><line x1="573" y1="84" x2="595" y2="58"/></g>
+    <line x1="507" y1="120" x2="468" y2="148" stroke="#806010" stroke-width="6"/>
+  </g>
+  <g clip-path="url(#cc6)">
+    <ellipse cx="680" cy="242" rx="100" ry="75" fill="url(#cylinderGlow)"/>
+    <rect x="618" y="208" width="122" height="68" rx="10" fill="#2a2008"/>
+    <rect x="618" y="208" width="122" height="10" rx="5 5 0 0" fill="#c09820"/>
+    <rect x="618" y="266" width="122" height="10" rx="0 0 5 5" fill="#c09820"/>
+    <line x1="650" y1="208" x2="650" y2="276" stroke="#a07818" stroke-width="2.5"/>
+    <line x1="680" y1="208" x2="680" y2="276" stroke="#a07818" stroke-width="2.5"/>
+    <line x1="710" y1="208" x2="710" y2="276" stroke="#a07818" stroke-width="2.5"/>
+    <rect x="670" y="230" width="20" height="8" rx="2" fill="#e0c040" stroke="#c0a020" stroke-width="1.5"/>
+    <rect x="628" y="218" width="104" height="18" rx="3" fill="rgba(200,170,80,0.2)"/>
+    <text x="680" y="231" font-size="9" font-family="Georgia,serif" fill="#d0c060" text-anchor="middle" font-style="italic">CILINDRO MAESTRO</text>
+    <rect x="630" y="274" width="100" height="18" rx="3" fill="#4a3810"/>
+    <rect x="622" y="290" width="116" height="10" rx="3" fill="#5a4818"/>
+  </g>
+  <g clip-path="url(#cc6)">
+    <circle cx="818" cy="155" r="34" fill="#1a1208" stroke="#a07820" stroke-width="3"/>
+    <circle cx="818" cy="155" r="28" fill="#e8d898" stroke="#806010" stroke-width="2"/>
+    <g font-family="Georgia,serif" font-size="8" fill="#3a2806" text-anchor="middle">
+      <text x="818" y="131">XII</text><text x="844" y="159">III</text><text x="818" y="183">VI</text><text x="792" y="159">IX</text>
+    </g>
+    <line x1="818" y1="155" x2="818" y2="136" stroke="#2a1806" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="818" y1="155" x2="832" y2="164" stroke="#2a1806" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="818" cy="155" r="3" fill="#3a2806"/>
+  </g>
+  <rect x="596" y="28" width="270" height="128" rx="12" fill="rgba(4,6,14,0.92)"/>
+  <rect x="600" y="32" width="262" height="120" rx="10" fill="none" stroke="rgba(200,170,60,0.55)" stroke-width="1.5"/>
+  <text x="731" y="62" font-size="18" font-family="Georgia,serif" fill="#f8e888" font-weight="700" text-anchor="middle">Capítulo VI</text>
+  <text x="731" y="85" font-size="12" font-family="Georgia,serif" fill="#d4b840" text-anchor="middle">El Veredicto del Reloj Maestro</text>
+  <text x="731" y="108" font-size="10" font-family="Georgia,serif" fill="#a89030" text-anchor="middle" font-style="italic">«El mecanismo acusa</text>
+  <text x="731" y="123" font-size="10" font-family="Georgia,serif" fill="#a89030" text-anchor="middle" font-style="italic">a quienes lo usaron</text>
+  <text x="731" y="138" font-size="10" font-family="Georgia,serif" fill="#a89030" text-anchor="middle" font-style="italic">como máscara»</text>
+  <text x="731" y="149" font-size="9" font-family="Georgia,serif" fill="#786820" text-anchor="middle">Cámara del Reloj · 1912</text>
+  <rect x="10" y="10" width="860" height="340" rx="14" fill="none" stroke="#987018" stroke-width="2.5"/>
+  <rect x="14" y="14" width="852" height="332" rx="12" fill="none" stroke="rgba(200,170,60,0.4)" stroke-width="1.5"/>
+</svg>

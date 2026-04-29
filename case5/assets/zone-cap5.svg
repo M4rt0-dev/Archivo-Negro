@@ -1,0 +1,236 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="Estacion de Valdeluna – Capitulo V Niebla sobre Valdeluna">
+  <defs>
+    <linearGradient id="sky5z" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#080c18"/><stop offset="55%" stop-color="#101828"/><stop offset="100%" stop-color="#1c2436"/>
+    </linearGradient>
+    <linearGradient id="ground5z" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#282018"/><stop offset="100%" stop-color="#1a1408"/>
+    </linearGradient>
+    <radialGradient id="train5" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd878" stop-opacity="0.9"/><stop offset="100%" stop-color="#ffd878" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lamp5z" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe090" stop-opacity="0.85"/><stop offset="100%" stop-color="#ffcc50" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="steam5z" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="rgba(200,200,210,0.7)"/><stop offset="100%" stop-color="rgba(200,200,210,0)"/>
+    </linearGradient>
+    <linearGradient id="fog5z" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(140,155,175,0)"/><stop offset="55%" stop-color="rgba(140,155,175,0.5)"/><stop offset="100%" stop-color="rgba(120,140,165,0.35)"/>
+    </linearGradient>
+    <filter id="gb5"><feGaussianBlur stdDeviation="14"/></filter>
+  </defs>
+  <rect width="1200" height="720" fill="url(#sky5z)"/>
+  <!-- Stars -->
+  <g fill="rgba(255,255,255,0.7)">
+    <circle cx="60"  cy="28" r="1"/><circle cx="140" cy="18" r="1.2"/>
+    <circle cx="560" cy="22" r="1"/><circle cx="680" cy="32" r="1.2"/>
+    <circle cx="820" cy="18" r="1"/><circle cx="960" cy="28" r="1.2"/>
+    <circle cx="1080" cy="16" r="1"/><circle cx="1160" cy="38" r="0.9"/>
+    <circle cx="200" cy="50" r="0.8"/><circle cx="440" cy="42" r="1.0"/>
+    <circle cx="1020" cy="52" r="0.8"/>
+  </g>
+  <!-- Distant hills silhouette -->
+  <path d="M0,260 Q150,200 300,230 Q480,170 620,205 Q780,160 920,195 Q1060,168 1200,200 L1200,300 L0,300 Z" fill="#0c1018"/>
+  <!-- Ground + platform -->
+  <rect x="0" y="460" width="1200" height="260" fill="url(#ground5z)"/>
+  <!-- Cobblestone platform surface lines -->
+  <g stroke="rgba(40,30,15,0.5)" stroke-width="1.2" fill="none">
+    <line x1="0" y1="478" x2="1200" y2="478"/><line x1="0" y1="496" x2="1200" y2="496"/>
+    <line x1="0" y1="514" x2="1200" y2="514"/>
+  </g>
+  <!-- TRAIN TRACKS (2 rails + sleepers) -->
+  <rect x="0" y="518" width="1200" height="10" fill="#3a3830"/>
+  <rect x="0" y="548" width="1200" height="10" fill="#3a3830"/>
+  <!-- Sleepers (ties) -->
+  <g fill="#2a2010" stroke="#1a140a" stroke-width="1">
+    <rect x="8"   y="510" width="38" height="56" rx="1"/>
+    <rect x="62"  y="510" width="38" height="56" rx="1"/>
+    <rect x="116" y="510" width="38" height="56" rx="1"/>
+    <rect x="170" y="510" width="38" height="56" rx="1"/>
+    <rect x="224" y="510" width="38" height="56" rx="1"/>
+    <rect x="278" y="510" width="38" height="56" rx="1"/>
+    <rect x="332" y="510" width="38" height="56" rx="1"/>
+    <rect x="386" y="510" width="38" height="56" rx="1"/>
+    <rect x="440" y="510" width="38" height="56" rx="1"/>
+    <rect x="494" y="510" width="38" height="56" rx="1"/>
+    <rect x="548" y="510" width="38" height="56" rx="1"/>
+    <rect x="602" y="510" width="38" height="56" rx="1"/>
+    <rect x="656" y="510" width="38" height="56" rx="1"/>
+    <rect x="710" y="510" width="38" height="56" rx="1"/>
+    <rect x="764" y="510" width="38" height="56" rx="1"/>
+    <rect x="818" y="510" width="38" height="56" rx="1"/>
+    <rect x="872" y="510" width="38" height="56" rx="1"/>
+    <rect x="926" y="510" width="38" height="56" rx="1"/>
+    <rect x="980" y="510" width="38" height="56" rx="1"/>
+    <rect x="1034" y="510" width="38" height="56" rx="1"/>
+    <rect x="1088" y="510" width="38" height="56" rx="1"/>
+    <rect x="1142" y="510" width="38" height="56" rx="1"/>
+  </g>
+  <!-- Rail head detail -->
+  <rect x="0" y="518" width="1200" height="4" fill="#555250"/>
+  <rect x="0" y="548" width="1200" height="4" fill="#555250"/>
+  <!-- STATION BUILDING (left side) -->
+  <rect x="20" y="248" width="520" height="220" fill="#7a624e" stroke="#5a4232" stroke-width="4"/>
+  <!-- Roof -->
+  <polygon points="0,248 280,165 560,248" fill="#5a4830"/>
+  <rect    x="0"   y="243" width="560" height="10" fill="#6a5840"/>
+  <!-- Chimney stacks -->
+  <rect x="158" y="135" width="28" height="80" fill="#4a3820"/>
+  <rect x="155" y="132" width="34" height="8"  fill="#5a4828"/>
+  <rect x="375" y="145" width="28" height="80" fill="#4a3820"/>
+  <rect x="372" y="142" width="34" height="8"  fill="#5a4828"/>
+  <!-- Windows (illuminated warm) -->
+  <rect x="48"  y="282" width="76" height="96" rx="5" fill="#080c14"/>
+  <rect x="50"  y="284" width="72" height="92" rx="4" fill="rgba(255,200,80,0.38)"/>
+  <line x1="86" y1="284" x2="86" y2="376" stroke="rgba(80,60,20,0.5)" stroke-width="2"/>
+  <line x1="50" y1="333" x2="122" y2="333" stroke="rgba(80,60,20,0.5)" stroke-width="2"/>
+  <rect x="148" y="282" width="76" height="96" rx="5" fill="#080c14"/>
+  <rect x="150" y="284" width="72" height="92" rx="4" fill="rgba(255,200,80,0.45)"/>
+  <line x1="186" y1="284" x2="186" y2="376" stroke="rgba(80,60,20,0.5)" stroke-width="2"/>
+  <line x1="150" y1="333" x2="222" y2="333" stroke="rgba(80,60,20,0.5)" stroke-width="2"/>
+  <rect x="280" y="282" width="76" height="96" rx="5" fill="#080c14"/>
+  <rect x="282" y="284" width="72" height="92" rx="4" fill="rgba(255,200,80,0.3)"/>
+  <line x1="318" y1="284" x2="318" y2="376" stroke="rgba(80,60,20,0.5)" stroke-width="2"/>
+  <rect x="380" y="282" width="76" height="96" rx="5" fill="#080c14"/>
+  <rect x="382" y="284" width="72" height="92" rx="4" fill="rgba(255,200,80,0.42)"/>
+  <line x1="418" y1="284" x2="418" y2="376" stroke="rgba(80,60,20,0.5)" stroke-width="2"/>
+  <!-- Station door arch -->
+  <rect x="220" y="372" width="80" height="100" rx="40 40 0 0" fill="#060a12"/>
+  <rect x="222" y="374" width="34" height="86" rx="17 17 0 0" fill="rgba(255,200,80,0.15)"/>
+  <rect x="260" y="374" width="36" height="86" rx="17 17 0 0" fill="rgba(255,200,80,0.1)"/>
+  <!-- Station sign -->
+  <rect x="160" y="255" width="200" height="26" rx="4" fill="#4a3420" stroke="#6a5030" stroke-width="1.5"/>
+  <text x="260" y="273" font-family="Georgia,serif" font-size="14" fill="#f0e090" text-anchor="middle" font-weight="700">VALDELUNA</text>
+  <!-- Clock on building -->
+  <circle cx="280" cy="217" r="22" fill="#e8d8a8" stroke="#5a4218" stroke-width="3"/>
+  <circle cx="280" cy="217" r="18" fill="none" stroke="#8a6a22" stroke-width="1.2"/>
+  <g stroke="#2a1a08" stroke-width="2" stroke-linecap="round">
+    <line x1="280" y1="197" x2="280" y2="202"/><line x1="302" y1="217" x2="296" y2="217"/>
+    <line x1="280" y1="237" x2="280" y2="232"/><line x1="258" y1="217" x2="264" y2="217"/>
+  </g>
+  <line x1="280" y1="217" x2="280" y2="204" stroke="#200e04" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="280" y1="217" x2="291" y2="223" stroke="#200e04" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="280" cy="217" r="3" fill="#1e1008"/>
+  <!-- Platform awning / canopy -->
+  <rect x="20" y="462" width="560" height="16" fill="#4a3820"/>
+  <g fill="#3a2a18" stroke="#2a1a0a" stroke-width="1">
+    <polygon points="20,478 50,462 80,478"/>
+    <polygon points="80,478 110,462 140,478"/>
+    <polygon points="140,478 170,462 200,478"/>
+    <polygon points="200,478 230,462 260,478"/>
+    <polygon points="260,478 290,462 320,478"/>
+    <polygon points="320,478 350,462 380,478"/>
+    <polygon points="380,478 410,462 440,478"/>
+    <polygon points="440,478 470,462 500,478"/>
+    <polygon points="500,478 530,462 560,478"/>
+  </g>
+  <!-- LOCOMOTIVE (right, heading left, fogged) -->
+  <g opacity="0.88">
+    <!-- Cab -->
+    <rect x="640" y="350" width="210" height="160" rx="8" fill="#38404a" stroke="#20282e" stroke-width="4"/>
+    <rect x="642" y="352" width="205" height="22" fill="#2e3840"/>
+    <!-- Cab roof -->
+    <rect x="630" y="340" width="226" height="16" rx="4" fill="#2e3840"/>
+    <!-- Cab windows -->
+    <rect x="658" y="364" width="72" height="54" rx="4" fill="#0a1828"/>
+    <rect x="660" y="366" width="68" height="50" rx="3" fill="rgba(90,140,180,0.25)"/>
+    <line x1="694" y1="366" x2="694" y2="416" stroke="#1a2a3a" stroke-width="2"/>
+    <rect x="760" y="368" width="60" height="46" rx="4" fill="#0a1828"/>
+    <rect x="762" y="370" width="56" height="42" rx="3" fill="rgba(90,140,180,0.2)"/>
+    <!-- Boiler / body -->
+    <rect x="840" y="380" width="352" height="90" rx="12" fill="#303840"/>
+    <rect x="850" y="382" width="330" height="25" rx="6" fill="#2a3038"/>
+    <!-- Boiler dome -->
+    <rect x="950" y="354" width="72" height="40" rx="18 18 0 0" fill="#282e38"/>
+    <rect x="960" y="356" width="52" height="18" rx="10 10 0 0" fill="#303840"/>
+    <!-- Sand dome -->
+    <rect x="1050" y="362" width="56" height="30" rx="14 14 0 0" fill="#282e38"/>
+    <!-- Smoke stack -->
+    <rect x="1120" y="308" width="40" height="72" rx="8 8 0 0" fill="#282e38"/>
+    <rect x="1116" y="304" width="48" height="10" rx="6" fill="#303840"/>
+    <!-- Headlamp -->
+    <circle cx="1192" cy="400" r="24" fill="#8a8060" stroke="#606048" stroke-width="3"/>
+    <circle cx="1192" cy="400" r="18" fill="rgba(255,220,100,0.88)"/>
+    <ellipse cx="1150" cy="420" rx="120" ry="60" fill="url(#train5)" opacity="0.5"/>
+    <!-- Wheels -->
+    <circle cx="700" cy="480" r="48" fill="#202830" stroke="#484850" stroke-width="5"/>
+    <circle cx="700" cy="480" r="34" fill="#282e38"/>
+    <circle cx="700" cy="480" r="12" fill="#585850"/>
+    <g stroke="#484850" stroke-width="3"><line x1="700" y1="448" x2="700" y2="512"/><line x1="668" y1="480" x2="732" y2="480"/><line x1="678" y1="456" x2="722" y2="504"/><line x1="722" y1="456" x2="678" y2="504"/></g>
+    <circle cx="900" cy="478" r="44" fill="#202830" stroke="#484850" stroke-width="5"/>
+    <circle cx="900" cy="478" r="30" fill="#282e38"/>
+    <circle cx="900" cy="478" r="10" fill="#585850"/>
+    <g stroke="#484850" stroke-width="3"><line x1="900" y1="448" x2="900" y2="508"/><line x1="870" y1="478" x2="930" y2="478"/><line x1="879" y1="457" x2="921" y2="499"/><line x1="921" y1="457" x2="879" y2="499"/></g>
+    <circle cx="1070" cy="478" r="44" fill="#202830" stroke="#484850" stroke-width="5"/>
+    <circle cx="1070" cy="478" r="30" fill="#282e38"/>
+    <circle cx="1070" cy="478" r="10" fill="#585850"/>
+    <g stroke="#484850" stroke-width="3"><line x1="1070" y1="448" x2="1070" y2="508"/><line x1="1040" y1="478" x2="1100" y2="478"/><line x1="1049" y1="457" x2="1091" y2="499"/><line x1="1091" y1="457" x2="1049" y2="499"/></g>
+    <!-- Connecting rod -->
+    <rect x="700" y="472" width="370" height="8" rx="4" fill="#383840" stroke="#484850" stroke-width="1"/>
+    <!-- Cow catcher -->
+    <polygon points="1200,450 1200,530 1185,530" fill="#303840"/>
+    <!-- Steam emission -->
+    <g fill="url(#steam5z)" opacity="0.65">
+      <ellipse cx="1125" cy="285" rx="40" ry="36"/>
+      <ellipse cx="1148" cy="252" rx="34" ry="28"/>
+      <ellipse cx="1118" cy="224" rx="44" ry="36"/>
+      <ellipse cx="1145" cy="192" rx="36" ry="30"/>
+      <ellipse cx="1110" cy="162" rx="46" ry="38"/>
+      <ellipse cx="1138" cy="130" rx="38" ry="32"/>
+      <ellipse cx="1104" cy="98"  rx="50" ry="42"/>
+    </g>
+  </g>
+  <!-- Platform lamp posts -->
+  <g>
+    <!-- Left lamp -->
+    <rect x="115" y="360" width="8" height="102" fill="#28200e" rx="2"/>
+    <path d="M119,366 Q136,352 134,330" fill="none" stroke="#28200e" stroke-width="6" stroke-linecap="round"/>
+    <rect x="126" y="326" width="16" height="22" rx="4" fill="#9a8810" stroke="#6a5e08" stroke-width="1.5"/>
+    <rect x="127" y="327" width="14" height="18" rx="3" fill="rgba(255,224,100,0.92)"/>
+    <polygon points="125,326 134,318 143,326" fill="#5a4808"/>
+    <ellipse cx="133" cy="342" rx="26" ry="20" fill="rgba(255,220,100,0.18)"/>
+    <rect x="111" y="460" width="16" height="8" rx="2" fill="#352c12"/>
+    <!-- Right lamp near building -->
+    <rect x="498" y="362" width="8" height="100" fill="#28200e" rx="2"/>
+    <path d="M502,368 Q486,354 488,332" fill="none" stroke="#28200e" stroke-width="6" stroke-linecap="round"/>
+    <rect x="480" y="328" width="16" height="22" rx="4" fill="#9a8810" stroke="#6a5e08" stroke-width="1.5"/>
+    <rect x="481" y="329" width="14" height="18" rx="3" fill="rgba(255,224,100,0.92)"/>
+    <polygon points="479,328 488,320 497,328" fill="#5a4808"/>
+    <ellipse cx="487" cy="344" rx="26" ry="20" fill="rgba(255,220,100,0.18)"/>
+    <rect x="494" y="460" width="16" height="8" rx="2" fill="#352c12"/>
+  </g>
+  <!-- Cargo cart on platform -->
+  <rect x="82" y="420" width="120" height="50" rx="4" fill="#5a3c18" stroke="#7a5828" stroke-width="2"/>
+  <rect x="82" y="420" width="120" height="12" rx="3 3 0 0" fill="#7a5020"/>
+  <circle cx="100" cy="470" r="10" fill="#2a2010" stroke="#3a3018" stroke-width="2"/>
+  <circle cx="184" cy="470" r="10" fill="#2a2010" stroke="#3a3018" stroke-width="2"/>
+  <!-- Cargo: sacks/boxes -->
+  <rect x="90"  y="396" width="40" height="28" rx="5" fill="#8a7050"/>
+  <rect x="135" y="400" width="38" height="24" rx="5" fill="#7a6040"/>
+  <rect x="178" y="394" width="42" height="30" rx="5" fill="#9a8060"/>
+  <!-- Bench + waiting figure -->
+  <rect x="390" y="430" width="110" height="30" rx="4" fill="#5a3810"/>
+  <rect x="392" y="428" width="106" height="6"  rx="3" fill="#6a4820"/>
+  <rect x="396" y="458" width="12" height="22" fill="#3a2008"/>
+  <rect x="484" y="458" width="12" height="22" fill="#3a2008"/>
+  <!-- Seated figure silhouette -->
+  <g opacity="0.65">
+    <ellipse cx="430" cy="422" rx="10" ry="9" fill="#0c1018"/>
+    <rect x="422" y="428" width="16" height="30" rx="4 4 0 0" fill="#0c1018"/>
+    <!-- Bag beside them -->
+    <rect x="446" y="434" width="18" height="14" rx="3" fill="#162018"/>
+    <rect x="447" y="432" width="16" height="5" rx="2" fill="#1e2820"/>
+  </g>
+  <!-- Fog layers -->
+  <rect x="0" y="440" width="1200" height="160" fill="url(#fog5z)"/>
+  <ellipse cx="300"  cy="540" rx="380" ry="80" fill="rgba(140,155,175,0.22)"/>
+  <ellipse cx="900"  cy="560" rx="420" ry="90" fill="rgba(130,148,170,0.2)"/>
+  <ellipse cx="600"  cy="520" rx="300" ry="60" fill="rgba(145,162,185,0.18)"/>
+  <!-- Label -->
+  <rect x="10" y="626" width="360" height="88" rx="10" fill="rgba(4,8,20,0.88)"/>
+  <rect x="14" y="630" width="352" height="80" rx="8" fill="none" stroke="rgba(180,150,60,0.45)" stroke-width="1.2"/>
+  <text x="190" y="657" font-family="Georgia,serif" font-size="18" fill="#f0d888" font-weight="700" text-anchor="middle">Estación de Valdeluna</text>
+  <text x="190" y="678" font-family="Georgia,serif" font-size="13" fill="#c8a450" text-anchor="middle">Valdeluna · Otoño 1912</text>
+  <text x="190" y="700" font-family="Georgia,serif" font-size="10" fill="#987840" text-anchor="middle" font-style="italic">«La niebla borra los testigos»</text>
+</svg>

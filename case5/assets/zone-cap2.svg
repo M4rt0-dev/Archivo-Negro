@@ -1,0 +1,199 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="Taller Bercial, San Teodoro – Capitulo II El Taller y la Deuda">
+  <defs>
+    <linearGradient id="wall2z" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e1208"/><stop offset="100%" stop-color="#2e1c0e"/>
+    </linearGradient>
+    <linearGradient id="floor2z" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5a4430"/><stop offset="100%" stop-color="#3e2c1c"/>
+    </linearGradient>
+    <radialGradient id="lamp2z" cx="58%" cy="22%" r="65%">
+      <stop offset="0%" stop-color="#ffdf80" stop-opacity="0.7"/><stop offset="100%" stop-color="#ffc840" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="forg2" cx="38%" cy="70%" r="52%">
+      <stop offset="0%" stop-color="#ff6010" stop-opacity="0.55"/><stop offset="100%" stop-color="#ff4000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="gb2"><feGaussianBlur stdDeviation="12"/></filter>
+  </defs>
+  <!-- Room wall + warm lamplight glow -->
+  <rect width="1200" height="720" fill="url(#wall2z)"/>
+  <ellipse cx="700" cy="140" rx="550" ry="420" fill="url(#lamp2z)"/>
+  <!-- Forge glow bottom left -->
+  <ellipse cx="160" cy="600" rx="240" ry="200" fill="url(#forg2)" filter="url(#gb2)"/>
+  <!-- Floor -->
+  <rect x="0" y="480" width="1200" height="240" fill="url(#floor2z)"/>
+  <!-- Floor planks -->
+  <g stroke="rgba(30,14,4,0.55)" stroke-width="1.8" fill="none">
+    <line x1="0" y1="500" x2="1200" y2="500"/><line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="0" y1="550" x2="1200" y2="550"/><line x1="0" y1="575" x2="1200" y2="575"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/><line x1="0" y1="625" x2="1200" y2="625"/>
+    <line x1="0" y1="650" x2="1200" y2="650"/><line x1="0" y1="675" x2="1200" y2="675"/>
+    <line x1="0" y1="700" x2="1200" y2="700"/>
+  </g>
+  <g stroke="rgba(30,14,4,0.3)" stroke-width="1" fill="none">
+    <line x1="110" y1="480" x2="90" y2="720"/><line x1="250" y1="480" x2="230" y2="720"/>
+    <line x1="390" y1="480" x2="370" y2="720"/><line x1="530" y1="480" x2="510" y2="720"/>
+    <line x1="670" y1="480" x2="650" y2="720"/><line x1="810" y1="480" x2="790" y2="720"/>
+    <line x1="950" y1="480" x2="930" y2="720"/><line x1="1090" y1="480" x2="1070" y2="720"/>
+  </g>
+  <!-- Ceiling beams -->
+  <rect x="0" y="0" width="1200" height="45" fill="#180e06"/>
+  <g fill="#10080a" stroke="#2a1608" stroke-width="2">
+    <rect x="0"   y="0" width="28" height="480"/>
+    <rect x="90"  y="0" width="28" height="480"/>
+    <rect x="220" y="0" width="28" height="480"/>
+    <rect x="350" y="0" width="28" height="480"/>
+    <rect x="480" y="0" width="28" height="480"/>
+    <rect x="610" y="0" width="28" height="480"/>
+    <rect x="740" y="0" width="28" height="480"/>
+    <rect x="870" y="0" width="28" height="480"/>
+    <rect x="1000" y="0" width="28" height="480"/>
+    <rect x="1130" y="0" width="28" height="480"/>
+  </g>
+  <!-- WORKBENCH (main) -->
+  <rect x="90" y="310" width="680" height="175" rx="6" fill="#6a3c14" stroke="#8a5022" stroke-width="3"/>
+  <rect x="90" y="300" width="680" height="16"  rx="4" fill="#8a5820"/>
+  <!-- Workbench legs -->
+  <rect x="105" y="482" width="18" height="200" fill="#4a2c0a"/>
+  <rect x="280" y="482" width="18" height="200" fill="#4a2c0a"/>
+  <rect x="500" y="482" width="18" height="200" fill="#4a2c0a"/>
+  <rect x="730" y="482" width="18" height="200" fill="#4a2c0a"/>
+  <!-- Workbench items: scattered clock parts -->
+  <!-- Large main gear assembly on bench -->
+  <g transform="translate(188 364)">
+    <circle cx="0" cy="0" r="68" fill="none" stroke="#c09830" stroke-width="7"/>
+    <circle cx="0" cy="0" r="52" fill="none" stroke="#a07820" stroke-width="3"/>
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#c09830" stroke-width="5"/>
+    <circle cx="0" cy="0" r="10" fill="#c09830"/>
+    <!-- Gear teeth marks -->
+    <g stroke="#c09830" stroke-width="8" stroke-linecap="square">
+      <line x1="0"  y1="-75" x2="0"  y2="-62"/>
+      <line x1="53" y1="-53" x2="44" y2="-44"/>
+      <line x1="75" y1="0"   x2="62" y2="0"/>
+      <line x1="53" y1="53"  x2="44" y2="44"/>
+      <line x1="0"  y1="75"  x2="0"  y2="62"/>
+      <line x1="-53" y1="53" x2="-44" y2="44"/>
+      <line x1="-75" y1="0"  x2="-62" y2="0"/>
+      <line x1="-53" y1="-53" x2="-44" y2="-44"/>
+    </g>
+    <!-- Spoke lines -->
+    <g stroke="#906810" stroke-width="2.5">
+      <line x1="0" y1="-52" x2="0" y2="52"/>
+      <line x1="-45" y1="-26" x2="45" y2="26"/>
+      <line x1="45" y1="-26" x2="-45" y2="26"/>
+    </g>
+  </g>
+  <!-- Medium gear -->
+  <g transform="translate(392 374)">
+    <circle cx="0" cy="0" r="48" fill="none" stroke="#a07820" stroke-width="5"/>
+    <circle cx="0" cy="0" r="35" fill="none" stroke="#886010" stroke-width="2.5"/>
+    <circle cx="0" cy="0" r="16" fill="none" stroke="#a07820" stroke-width="3"/>
+    <circle cx="0" cy="0" r="7" fill="#a07820"/>
+    <g stroke="#a07820" stroke-width="6" stroke-linecap="square">
+      <line x1="0"  y1="-53" x2="0"  y2="-42"/><line x1="37" y1="-37" x2="30" y2="-30"/>
+      <line x1="53" y1="0"   x2="42" y2="0"/>  <line x1="37" y1="37"  x2="30" y2="30"/>
+      <line x1="0"  y1="53"  x2="0"  y2="42"/>  <line x1="-37" y1="37" x2="-30" y2="30"/>
+      <line x1="-53" y1="0"  x2="-42" y2="0"/> <line x1="-37" y1="-37" x2="-30" y2="-30"/>
+    </g>
+    <g stroke="#806010" stroke-width="2"><line x1="0" y1="-35" x2="0" y2="35"/><line x1="-30" y1="-17" x2="30" y2="17"/><line x1="30" y1="-17" x2="-30" y2="17"/></g>
+  </g>
+  <!-- Small gear -->
+  <g transform="translate(530 350)">
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#8a6820" stroke-width="4"/>
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#7a5818" stroke-width="2"/>
+    <circle cx="0" cy="0" r="8"  fill="#8a6820"/>
+    <g stroke="#8a6820" stroke-width="5" stroke-linecap="square">
+      <line x1="0" y1="-35" x2="0" y2="-25"/><line x1="25" y1="-25" x2="20" y2="-20"/>
+      <line x1="35" y1="0"  x2="25" y2="0"/> <line x1="25" y1="25"  x2="20" y2="20"/>
+      <line x1="0" y1="35"  x2="0" y2="25"/> <line x1="-25" y1="25" x2="-20" y2="20"/>
+      <line x1="-35" y1="0" x2="-25" y2="0"/><line x1="-25" y1="-25" x2="-20" y2="-20"/>
+    </g>
+  </g>
+  <!-- Ledger / open account book on bench -->
+  <rect x="580" y="310" width="110" height="88" rx="3" fill="#e8d8a8" stroke="#8a6030" stroke-width="2" transform="rotate(-6 635 354)"/>
+  <rect x="582" y="312" width="50"  height="84" rx="2" fill="#e0d098" stroke="#8a6030" stroke-width="1" transform="rotate(-6 607 354)"/>
+  <g stroke="rgba(60,40,10,0.5)" stroke-width="0.8" transform="rotate(-6 635 354)">
+    <line x1="586" y1="322" x2="684" y2="322"/><line x1="586" y1="330" x2="684" y2="330"/>
+    <line x1="586" y1="338" x2="684" y2="338"/><line x1="586" y1="346" x2="684" y2="346"/>
+    <line x1="586" y1="354" x2="684" y2="354"/><line x1="586" y1="362" x2="684" y2="362"/>
+    <line x1="586" y1="370" x2="684" y2="370"/>
+  </g>
+  <!-- Red underline = debt entry -->
+  <line x1="592" y1="358" x2="660" y2="354" stroke="#a02010" stroke-width="2" transform="rotate(-6 635 354)"/>
+  <!-- Inkwell -->
+  <rect x="660" y="315" width="22" height="28" rx="10" fill="#1a0808" stroke="#5a3010" stroke-width="1.5"/>
+  <ellipse cx="671" cy="315" rx="11" ry="5" fill="#2a0a0a" stroke="#5a3010" stroke-width="1"/>
+  <!-- Spring/coil -->
+  <g stroke="#9a8020" stroke-width="3" fill="none" transform="translate(640 430)">
+    <path d="M0,0 Q15,-8 30,0 Q45,8 60,0 Q75,-8 90,0 Q105,8 120,0"/>
+    <path d="M0,8 Q15,0 30,8 Q45,16 60,8 Q75,0 90,8 Q105,16 120,8"/>
+  </g>
+  <!-- Clock face (half assembled) on bench right side -->
+  <circle cx="710" cy="370" r="52" fill="#ece0ba" stroke="#5a4218" stroke-width="3"/>
+  <circle cx="710" cy="370" r="46" fill="none" stroke="#8a6a22" stroke-width="1.5"/>
+  <g stroke="#2a1a08" stroke-width="2.5" stroke-linecap="round">
+    <line x1="710" y1="320" x2="710" y2="328"/><line x1="760" y1="370" x2="752" y2="370"/>
+    <line x1="710" y1="420" x2="710" y2="412"/><line x1="660" y1="370" x2="668" y2="370"/>
+    <line x1="745" y1="335" x2="739" y2="341"/><line x1="745" y1="405" x2="739" y2="399"/>
+    <line x1="675" y1="335" x2="681" y2="341"/><line x1="675" y1="405" x2="681" y2="399"/>
+  </g>
+  <line x1="710" y1="370" x2="710" y2="336" stroke="#200e04" stroke-width="4" stroke-linecap="round"/>
+  <line x1="710" y1="370" x2="736" y2="382" stroke="#200e04" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="710" cy="370" r="5" fill="#3a2406"/>
+  <!-- Shelf on back wall with watch parts jars -->
+  <rect x="820" y="130" width="360" height="18" rx="3" fill="#5a3810" stroke="#3a2408" stroke-width="2"/>
+  <rect x="820" y="228" width="360" height="18" rx="3" fill="#5a3810" stroke="#3a2408" stroke-width="2"/>
+  <rect x="820" y="328" width="360" height="18" rx="3" fill="#5a3810" stroke="#3a2408" stroke-width="2"/>
+  <!-- Jars on shelves -->
+  <g fill="#3a6058" stroke="#2a4840" stroke-width="1.5">
+    <rect x="836" y="98"  width="24" height="34" rx="4"/><rect x="870" y="103" width="20" height="29" rx="3"/>
+    <rect x="900" y="94"  width="26" height="38" rx="4"/><rect x="936" y="100" width="22" height="32" rx="3"/>
+    <rect x="968" y="97"  width="24" height="35" rx="4"/><rect x="1002" y="105" width="20" height="27" rx="3"/>
+    <rect x="1032" y="96" width="26" height="36" rx="4"/><rect x="1068" y="102" width="24" height="30" rx="3"/>
+    <rect x="1102" y="97" width="22" height="35" rx="4"/><rect x="1134" y="100" width="28" height="32" rx="4"/>
+  </g>
+  <!-- Window rear wall (shows night outside) -->
+  <rect x="840" y="150" width="140" height="80" rx="5" fill="#080e18" stroke="#4a3010" stroke-width="4"/>
+  <line x1="910" y1="150" x2="910" y2="230" stroke="#4a3010" stroke-width="3"/>
+  <line x1="840" y1="190" x2="980" y2="190" stroke="#4a3010" stroke-width="3"/>
+  <circle cx="880" cy="170" r="14" fill="#c8d0e0" fill-opacity="0.5"/><!-- Moon through window -->
+  <circle cx="888" cy="165" r="11" fill="#080e18"/><!-- crescent -->
+  <!-- Overhead hanging lamp -->
+  <line x1="700" y1="0" x2="700" y2="55" stroke="#7a5020" stroke-width="3"/>
+  <path d="M678,55 L722,55 L728,88 L672,88 Z" fill="#b09030" stroke="#806010" stroke-width="1.5"/>
+  <ellipse cx="700" cy="88" rx="22" ry="14" fill="rgba(255,220,100,0.9)"/>
+  <ellipse cx="700" cy="100" rx="34" ry="26" fill="rgba(255,210,80,0.18)"/>
+  <!-- Forge / hearth bottom left -->
+  <rect x="0" y="400" width="180" height="320" fill="#2a1808"/>
+  <rect x="18" y="420" width="144" height="260" fill="#1e1008"/>
+  <rect x="0"  y="390" width="180" height="14"  fill="#3a2210"/>
+  <!-- Forge fire glow -->
+  <ellipse cx="90" cy="420" rx="72" ry="50" fill="rgba(255,80,10,0.45)"/>
+  <ellipse cx="90" cy="430" rx="50" ry="35" fill="rgba(255,140,30,0.5)"/>
+  <!-- Flame shapes -->
+  <path d="M66,460 Q78,400 90,390 Q102,400 90,420 Q100,400 108,410 Q115,390 120,420 Q130,400 126,460 Z" fill="rgba(255,160,30,0.7)"/>
+  <path d="M75,460 Q84,415 90,408 Q96,415 90,432 Q98,415 104,428 Q110,410 116,442 Q122,420 118,460 Z" fill="rgba(255,210,80,0.55)"/>
+  <!-- Anvil -->
+  <rect x="820" y="430" width="120" height="52" rx="8" fill="#3a3030" stroke="#2a2020" stroke-width="2"/>
+  <rect x="810" y="478" width="140" height="16" rx="4" fill="#302828"/>
+  <rect x="830" y="494" width="30" height="50" fill="#302828"/>
+  <rect x="900" y="494" width="30" height="50" fill="#302828"/>
+  <!-- Tool hooks on wall right side -->
+  <rect x="1000" y="0" width="6" height="480" fill="#28200e"/>
+  <g fill="none" stroke="#4a3818" stroke-width="2.5" stroke-linecap="round">
+    <path d="M1006,80 Q1040,80 1040,100 Q1040,120 1020,120"/>
+    <path d="M1006,160 Q1050,160 1050,185 Q1050,210 1030,210"/>
+    <path d="M1006,260 Q1035,260 1035,280 Q1035,300 1015,300"/>
+    <path d="M1006,360 Q1045,360 1045,382 Q1045,404 1025,404"/>
+  </g>
+  <!-- Tools hanging: pliers shape -->
+  <g fill="#7a6830" stroke="#5a4818" stroke-width="1">
+    <rect x="1035" y="120" width="8" height="40" rx="3" transform="rotate(12 1039 140)"/>
+    <rect x="1043" y="122" width="8" height="40" rx="3" transform="rotate(-6 1047 142)"/>
+  </g>
+  <!-- Title label -->
+  <rect x="10" y="630" width="360" height="82" rx="10" fill="rgba(10,4,2,0.88)"/>
+  <rect x="14" y="634" width="352" height="74" rx="8" fill="none" stroke="rgba(200,150,50,0.45)" stroke-width="1.2"/>
+  <text x="190" y="661" font-family="Georgia,serif" font-size="18" fill="#f0d888" font-weight="700" text-anchor="middle">Taller Bercial</text>
+  <text x="190" y="682" font-family="Georgia,serif" font-size="13" fill="#c8a450" text-anchor="middle">San Teodoro · Otoño 1912</text>
+  <text x="190" y="703" font-family="Georgia,serif" font-size="10" fill="#987840" text-anchor="middle" font-style="italic">«Las piezas hablan mejor que los testigos»</text>
+</svg>

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Mecanismo de Bronce</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="masthead">
+      <a class="back-link" href="../index.html">Archivo Negro</a>
+      <div class="brand-copy">
+        <p class="eyebrow">Aventura visual</p>
+        <h1>El Mecanismo de Bronce</h1>
+        <p class="subtitle">Profesor Aurelio Montes e Inés Galván frente al reloj que aprendió a mentir.</p>
+        <div class="audio-controls" id="audioControls">
+          <button id="musicMystery" class="tiny-button" type="button">🎵 Misterio</button>
+          <button id="musicTension" class="tiny-button" type="button">🎵 Tensión</button>
+          <button id="musicSilence" class="tiny-button" type="button">🔇 Silencio</button>
+          <button id="voiceToggle" class="tiny-button" type="button">🗣️ Voz OFF</button>
+        </div>
+      </div>
+      <div class="status-panel">
+        <div>
+          <span class="status-label">Capítulo</span>
+          <strong id="chapterBadge"></strong>
+        </div>
+        <div>
+          <span class="status-label">Puzles resueltos</span>
+          <strong id="progressBadge"></strong>
+          <div class="progress-rail" id="progressRail">
+            <div id="progressFill" class="progress-fill"></div>
+            <div id="progressHat" class="progress-hat" aria-hidden="true">🎩</div>
+          </div>
+        </div>
+        <div>
+          <span class="status-label">Picarats</span>
+          <strong id="scoreBadge"></strong>
+        </div>
+        <div>
+          <span class="status-label">Monedas de pista</span>
+          <strong id="hintCoinBadge"></strong>
+        </div>
+      </div>
+    </header>
+
+    <nav id="viewNav" class="view-nav"></nav>
+
+    <main class="main-grid">
+      <section id="storyPanel" class="panel story-panel">
+        <div class="panel-topline">
+          <p class="eyebrow">Historia</p>
+          <button id="resetButton" class="ghost-button" type="button">Reiniciar progreso</button>
+        </div>
+        <div id="chapterTabs" class="chapter-tabs"></div>
+        <article id="sceneCard" class="scene-card"></article>
+      </section>
+
+      <section id="puzzlePanel" class="panel puzzle-panel">
+        <div class="panel-topline">
+          <p class="eyebrow">Puzle activo</p>
+          <div id="puzzleMeta" class="puzzle-meta"></div>
+        </div>
+        <div id="puzzleList" class="puzzle-list"></div>
+        <div id="puzzleStage" class="puzzle-stage"></div>
+      </section>
+
+      <aside id="notebookPanel" class="panel side-panel">
+        <div class="panel-topline">
+          <p class="eyebrow">Cuaderno de Inés</p>
+        </div>
+        <div class="notes-panel">
+          <label class="notes-label" for="notesInput">Notas de investigación</label>
+          <textarea id="notesInput" class="notes-input" placeholder="Escribe aquí tus teorías, contraseñas, sospechosos, horarios y conexiones..."></textarea>
+          <div class="notes-actions">
+            <button id="clearNotesButton" class="ghost-button" type="button">Limpiar notas</button>
+            <span id="notesStatus" class="notes-status"></span>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <h2>Monedas de pista</h2>
+        <div id="hintCoinLedger" class="clue-list"></div>
+        <div id="locationDeck" class="location-deck"></div>
+        <div class="divider"></div>
+        <h2>Claves reunidas</h2>
+        <div id="clueList" class="clue-list"></div>
+        <div class="divider"></div>
+        <h2>Veredicto</h2>
+        <div id="finalCard" class="final-card"></div>
+        <div class="divider"></div>
+        <h2>Diario de Inés</h2>
+        <div id="diaryList" class="clue-list"></div>
+        <div class="divider"></div>
+        <h2>Colección de objetos</h2>
+        <div id="collectibleGrid" class="location-deck"></div>
+      </aside>
+
+      <section id="mapPanel" class="panel map-panel">
+        <div class="panel-topline">
+          <p class="eyebrow">Mapa de investigación</p>
+          <p class="puzzle-meta">Pulsa cualquier nodo para ir directamente a ese puzle</p>
+        </div>
+        <div id="mapGrid" class="map-grid"></div>
+      </section>
+    </main>
+  </div>
+
+    <div id="dialogueOverlay" class="dialogue-overlay">
+      <div class="dialogue-box">
+        <div id="dialoguePortrait" class="dialogue-portrait" aria-hidden="true"></div>
+        <div class="dialogue-main">
+        <p class="eyebrow" id="dialogueSpeaker"></p>
+        <p id="dialogueText" class="dialogue-text"></p>
+        <div class="dialogue-footer">
+          <span id="dialogueCounter" class="dialogue-counter"></span>
+          <button id="dialogueNext" class="answer-button" type="button">Siguiente →</button>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="puzzleAnnounce" class="puzzle-announce-overlay"></div>
+    <div id="chapterTransition" class="chapter-transition-overlay"></div>
+    <div id="fxOverlay" class="fx-overlay" aria-hidden="true"></div>
+
+  <template id="feedbackTemplate">
+    <div class="feedback-card">
+      <p class="eyebrow">Resolución</p>
+      <h3></h3>
+      <p class="feedback-copy"></p>
+    </div>
+  </template>
+
+  <script src="game.js"></script>
+</body>
+</html>
